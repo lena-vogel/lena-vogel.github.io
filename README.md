@@ -1,4 +1,4 @@
-theme: jekyll-theme-Architect
+theme: jekyll-theme-Minima
 
 # 1 Header
 ## 2 Header
