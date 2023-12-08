@@ -18,7 +18,7 @@ body {
 }
 a {
   transition: all 0.3s ease;
-  color: #8b6aca;
+  color: rgb(182, 28, 66);
 }
 
 a:hover,
@@ -55,7 +55,7 @@ blockquote {
 }
 
 .tm-text-primary {
-  color: #8b6aca;
+  color: rgb(182, 28, 66);
 }
 
 .tm-font-big {
@@ -64,14 +64,14 @@ blockquote {
 
 .tm-btn-primary {
   color: white;
-  background-color: #8b6aca;
+  background-color: rgb(182, 28, 66);
   padding: 14px 30px;
 }
 
 .tm-btn-primary:hover,
 .tm-btn-primary:focus {
   color: white;
-  background-color: #8b6aca;
+  background-color: rgb(182, 28, 66);
 }
 
 /* Navbar */
@@ -97,11 +97,11 @@ blockquote {
 
 .navbar-brand:hover,
 .tm-navbar.scroll .navbar-brand:hover {
-  color: #8b6aca;
+  color: rgb(182, 28, 66);
 }
 
 .tm-navbar.scroll .navbar-brand {
-  color: #8b6aca;
+  color: rgb(182, 28, 66);
 }
 
 .nav-item {
@@ -120,7 +120,7 @@ blockquote {
 .tm-navbar.scroll .tm-nav-link.current,
 .tm-nav-link:hover {
   color: #FFF;
-  background-color: #8b6aca;
+  background-color: rgb(182, 28, 66);
 }
 
 .navbar-toggler {
@@ -237,7 +237,7 @@ blockquote {
 .tm-down-arrow:hover,
 .tm-down-arrow:focus {
   color: #FFF;
-  background: #8b6aca;
+  background: rgb(182, 28, 66);
   padding: 20px 50px;
 }
 
@@ -258,7 +258,7 @@ blockquote {
 
 .tm-icon {
   display: block;
-  color: #8b6aca;
+  color: rgb(182, 28, 66);
 }
 
 .tm-continue {
@@ -349,7 +349,7 @@ blockquote {
 .slick-dots li button:focus:before,
 .slick-dots li.slick-active button:before {
   opacity: 1;
-  color: #8b6aca;
+  color: rgb(182, 28, 66);
 }
 
 .tm-testimonials-carousel .slick-dots li button:before {
@@ -374,7 +374,7 @@ blockquote {
   position: relative;
   float: left;
   overflow: hidden;
-  background: #8b6aca;
+  background: rgb(182, 28, 66);
   text-align: center;
   cursor: pointer;
 }
@@ -541,7 +541,7 @@ figure.effect-honey:hover h2 i {
 
 .item-link:hover i,
 .item-link:hover span {
-  color: #8b6aca;
+  color: rgb(182, 28, 66);
 }
 
 .tm-input {
@@ -557,14 +557,14 @@ figure.effect-honey:hover h2 i {
 .tm-btn-submit {
 	font-size: 0.9em;
 	color: #fff;
-	background-color: #8b6aca;
+	background-color: rgb(182, 28, 66);
 	width: 50%;
 	margin-bottom: 60px;
 }
 
 .tm-btn-submit:hover {
 	color: #fff;
-	background-color: #8b6aca;
+	background-color: rgb(182, 28, 66);
 }
 
 ::placeholder {
@@ -596,7 +596,7 @@ figure.effect-honey:hover h2 i {
 }
 
 .tm-footer a:hover {
-	color: #8b6aca;
+	color: rgb(182, 28, 66);
 }
 
 .tm-footer-link {
