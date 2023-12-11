@@ -95,6 +95,16 @@ blockquote {
   font-weight: bold;
 }
 
+.nav-link-scrolled {
+  background-color:rgb(182, 28, 66, 0.5);
+}
+
+
+/* Override Bootstrap's default navbar styles */
+.navbar-collapse {
+  justify-content: center; /* This centers the child elements (nav items) */
+}
+
 .navbar-brand:hover,
 .tm-navbar.scroll .navbar-brand:hover {
   color: rgb(182, 28, 66);

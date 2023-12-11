@@ -64,6 +64,17 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
                         <br>Through the feminist struggles and the recent advances in gender equality, women have gained space and importance in movies.</br>
                         <br>Indeed, the cinematic world has long been a mirror reflecting societal norms and changes, and nowhere is this more evident than in the representation of women.</br>
 
+                        <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                          <img src="plots/h_gender_actors.png" style="max-width: 60%; max-height: 100%; border: none;">
+                        </div>
+
+                        <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                          <img src="plots/h_movies_years.png" style="max-width: 60%; max-height: 100%; border: none;">
+                        </div>
+
+                        <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                          <img src="plots/h_missing_values.png" style="max-width: 60%; max-height: 100%; border: none;">
+                        </div>
                     </div>
                 </div>
 
@@ -78,6 +89,10 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
                 <div class="tm-intro-text-container">
                     <h2 class="tm-text-primary mb-4 tm-section-title">Potential causes</h2>
                     <br>blablabla</br>
+
+                    <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                      <img src="plots/f_gender_distr.png" style="max-width: 60%; max-height: 100%; border: none;">
+                    </div>
                 </div>
             </div>
         </div>
@@ -92,6 +107,20 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
                     <h2 class="tm-text-primary mb-4 tm-section-title">Quality of the increase</h2>
                     <br>blablabla</br>
                     <iframe src="plots/age_evolution_plot.html" width="100%" height="600" style="border:none;"></iframe>
+
+                    <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                      <img src="plots/b_actors_age.png" width="70%" height="100%" style="border:none;"></img>
+                    </div>
+
+                    <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                      <img src="plots/h_bechdel.png" style="max-width: 60%; max-height: 100%; border: none;">
+                    </div>
+
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                      <img src="plots/h_mas_score.png" style="max-width: 50%; height: auto; padding-right: 10px;">
+                      <img src="plots/h_fem_score.png" style="max-width: 50%; height: auto; padding-left: 10px;">
+                  </div>
+                  
                 </div>
             </div>
         </div>
@@ -233,7 +262,18 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
           }
         });
       };
-      
+      window.onscroll = function() {
+          var navLinks = document.querySelectorAll('.nav-link');
+          if (document.documentElement.scrollTop > 50) {
+              navLinks.forEach(function(link) {
+                  link.classList.add('nav-link-scrolled');
+              });
+          } else {
+              navLinks.forEach(function(link) {
+                  link.classList.remove('nav-link-scrolled');
+              });
+          }
+      };
       $(function(){
         // Hero Section - Background Parallax
         background_image_parallax($(".tm-parallax"), 0.30, false);
