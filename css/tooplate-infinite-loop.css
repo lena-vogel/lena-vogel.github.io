@@ -15,8 +15,8 @@ https://www.tooplate.com/view/2117-infinite-loop
 body {
 	/* font-family: "Raleway", sans-serif; */
   font-family: 'DM Sans', sans-serif;
-	font-size: 1.2em;
-  color: #000000;
+	font-size: 1em;
+  color: #121212;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -49,15 +49,12 @@ blockquote {
   line-height: 1.8em;
 }
 
-#actresses { 
-  margin-left: 14%;
-  margin-right: 14%;
-}
-
 .tm-section-pad-top {
   padding-top: 80px;
   padding-bottom: 40px;
-
+  margin-left: 16%;
+  margin-right: 16%;
+  text-align: justify;
 }
 
 .tm-content-box {
@@ -224,12 +221,12 @@ blockquote {
 .tm-hero-title {
   font-family: 'Limelight', sans-serif;
   font-size: 3.5rem;
-  /* text-shadow: 2px 2px 2px #333; */
+  text-shadow: 2px 2px 2px #333;
 }
 
 .tm-hero-subtitle {
-  font-size: 1.3em;
-  /* text-shadow: 2px 2px 2px #333; */
+  font-size: 1em;
+  text-shadow: 2px 2px 2px #333;
 }
 
 .tm-intro-next {
@@ -278,6 +275,15 @@ blockquote {
 .tm-section-title {
   font-size: 2.6rem;
   font-weight: normal;
+  margin-bottom: 0;
+}
+
+.custom-hr {
+  margin-top: -15px; /* Ajustez cette valeur pour rapprocher de votre texte */
+  height: 2px;
+  border: none;
+  color: #333;
+  background-color: #333;
 }
 
 .tm-intro-text {
@@ -540,15 +546,24 @@ figure.effect-honey:hover h2 i {
 /* Contact */
 
 #contact {
-  color: white;
+  /* color: white;
   background-color: #001828;
   background-image: url(../img/popcorn.jpeg);
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 800px;
+  background-size: cover;
+  min-height: 300px;
   position: relative;
   padding-bottom: 50px;
-  padding-top: 100px;
+  padding-top: 100px; */
+  background-color: #fff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 50vh;
+  min-height: 375px;
+  position: relative;
 }
 
 .contact-item {
