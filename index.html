@@ -1,27 +1,29 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Women representation in movies</title>
-    <link rel="stylesheet" href="fontawesome-5.5/css/all.min.css" />
-    <link rel="stylesheet" href="slick/slick.css">
-    <link rel="stylesheet" href="slick/slick-theme.css">
-    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/tooplate-infinite-loop.css" />
-<!--
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Women representation in movies</title>
+  <link rel="stylesheet" href="fontawesome-5.5/css/all.min.css" />
+  <link rel="stylesheet" href="slick/slick.css">
+  <link rel="stylesheet" href="slick/slick-theme.css">
+  <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/tooplate-infinite-loop.css" />
+  <!--
 Tooplate 2117 Infinite Loop
 https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.0 HTML Template
 -->
 
-  </head>
-  <body>    
-    <!-- Hero section -->
-    <section id="about" class="text-white tm-font-big tm-parallax">
-      <!-- Navigation -->
-      <!-- <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">              
+</head>
+
+<body>
+  <!-- Hero section -->
+  <section id="about" class="text-white tm-font-big tm-parallax">
+    <!-- Navigation -->
+    <!-- <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">              
         <div class="container">
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
@@ -44,346 +46,467 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
           </div>        
         </div>
       </nav> -->
-      
-      <div class="text-center tm-hero-text-container">
-        <div class="tm-hero-text-container-inner">
-            <h2 class="tm-hero-title">Are women in movies clickbait?</h2>
-            <br> by Kenji Tetard, Aymeric Bacuet, Naël Dillenbourg, François Dumoncel, Lena Vogel</br>
-            <p class="tm-hero-subtitle">
-            </p>
-        </div>        
-      </div>    
-    </section>
 
-    <section id="actresses" class="tm-section-pad-top">
-      <div class="container">
-            <div class="row tm-content-box">
-                <div class="col-lg-12 col-xl-12">
-                    <div class="tm-intro-text-container">
-                        <h2 class="tm-text-primary mb-4 tm-section-title">Actors and actresses</h2>
-                        <br>Through the feminist struggles and the recent advances in gender equality, women have gained space and importance in movies.</br>
-                        <br>Indeed, the cinematic world has long been a mirror reflecting societal norms and changes, and nowhere is this more evident than in the representation of women.</br>
-                        <br>This year, among the <a href="https://www.festival-cannes.com/selection/">21 movies competing for the Cannes festival</a>, 7 of them were directed by women.</br>
-                        <br>Moreover, it is easy to see that movies, TV shows and other forms of art talk more and more about women realities, letting the archaic male-gaze in the past.</br>
-                        <br>In this study, we will try and understand gendered dynamics that could involved in the film industry. To do so, we will be using the CMU Movie Corpus dataset.
-                          It contains around 80'000 movies released between 1914 and 2012. Here is a graph to show you the evolution of the number of movies released per year!</br>
-
-                        <iframe src="plots/movie_distribution.html" width="100%" height="600" style="border:none;"></iframe>
-                        <br>See? There are, of course very few movies before 1980, this is why for future graphs which represent values per year, we will restrain the years range to the 30 years between 1980 and 2010 only.</br>
-                        <br>First, we could ask ourselves the following question: "Are there more women actresses who play characters in movies now than before?"</br>
-                        <iframe src="plots/actors_gender_proportion.html" width="100%" height="600" style="border:none;"></iframe>
-                        <br>That is interesting! From 1980 to 2010, the proportion of women actresses compared to men increased of more than 7%! It is not a huge increase, but it still is considerable.
-                        We'll have to investigate more on that and the potential causes for this increase, as well as whether when women are <b>more</b> represented, it also imply they are <b>better</b> represented.</br>
-                        <iframe src="plots/map_countries_movies_play.html" width="100%" height="600" style="border:none;"></iframe>
-                    </div>
-                </div>
-
-            </div>
+    <div class="text-center tm-hero-text-container">
+      <div class="tm-hero-text-container-inner">
+        <h2 class="tm-hero-title">Are women in movies clickbait?</h2>
+        <p class="tm-hero-subtitle">
+          by Kenji Tetard, Aymeric Bacuet, Naël Dillenbourg, François Dumoncel, Lena Vogel
+        </p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="causes" class="tm-section-pad-top tm-parallax-2">     
-      <div class="container">
-        <div class="row tm-content-box">
-            <div class="col-lg-12 col-xl-12">
-                <div class="tm-intro-text-container">
-                    <h2 class="tm-text-primary mb-4 tm-section-title">Potential causes</h2>
-                    <br>Now, let us explore the potential causes for the increase of women acrtesses in movies. Here we will only take the data on the movies we have access to.
-                    We will not be correlating the growing number of actresses to historical events whatsoever.</br>
-                    <br>The first thing that should come into your mind is: "What about the movie directors and producers?"
-                      Lucky you, the next graphs are about the gender proportions of the latter.</br>
-                    <iframe src="plots/gender_distribution_bar.html" width="100%" height="600" style="border:none;"></iframe>
-                    <iframe src="plots/director_gender_proportion.html" width="100%" height="600" style="border:none;"></iframe>
-                    <iframe src="plots/producer_gender_proportion.html" width="100%" height="600" style="border:none;"></iframe>
-                    <iframe src="plots/director_producer_actor_gender_correlation.html" width="100%" height="600" style="border:none;"></iframe>
-                </div>
-            </div>
+  <section id="actresses" class="tm-section-pad-top">
+    <div class="container">
+      <div class="row tm-content-box">
+        <div class="col-lg-12 col-xl-12">
+          <div class="tm-intro-text-container">
+            <h2 class="tm-text-primary mb-4 tm-section-title">Towards A New Era in Cinema ? </h2>
+            <hr class="custom-hr">
+
+            Through the feminist struggles and the recent advances in gender equality, women have gained space and
+            importance in movies.</>
+            <br>Indeed, the cinematic world has long been a mirror reflecting societal norms and changes, and nowhere is
+            this more evident than in the representation of women.</br>
+            <br> In the hallowed halls of the <a href="https://www.festival-cannes.com/selection/">Cannes Film
+              Festival</a>, a prestigious battleground for cinematic
+            excellence, the winds of change are palpable. This year, a striking 7 out of 21 films competing for the top
+            prize are helmed by women. Cast your mind back to 1995, and the contrast is stark: a mere 2 out of 24. This
+            shift is more than just numbers; it's a testament to the slow but sure march towards gender parity in
+            filmmaking.
+            <br> <br>
+            Moreover, it is easy to see that movies, TV shows and other forms of art talk more and more about women
+            realities, letting the archaic male-gaze in the past. However, like any great story, this one too has its
+            conflicts. Stereotypes and inequalities stubbornly persist in the industry, reminding us that our quest for
+            true equality is ongoing.</br>
+            <br>Let's embark on a journey of discovery together. In this study, we'll delve into the gendered dynamics
+            at play in the film industry. Our guide? The CMU Movie Corpus dataset, a dataset of around 80,000
+            movies released between 1914 and 2012. See the graph below that tracks the journey of movie releases through
+            the years,
+            showing us how the film industry has evolved over time</br>
+
+            <iframe src="plots/movie_distribution.html" width="100%" height="600" style="border:none;"></iframe>
+            <br>See? There are, of course very few movies before 1980, this is why for future graphs which represent
+            values per year, we will restrain the years range to the 30 years between 1980 and 2010 only.</br>
+            <br>First, we could ask ourselves the following question: "Are there more women actresses who play
+            characters in movies now than before?"</br>
+            <br>
+            <br>
+            <h2 class="tm-text-primary mb-4 tm-section-title">Actors and actresses</h2>
+            <hr class="custom-hr">
+
+            <iframe src="plots/actors_gender_proportion.html" width="100%" height="600" style="border:none;"></iframe>
+            <br>That is interesting! From 1980 to 2010, the proportion of women actresses compared to men increased of
+            more than 7%! It is not a huge increase, but it still is considerable.
+            We'll have to investigate more on that and the potential causes for this increase, as well as whether when
+            women are <b>more</b> represented, it also imply they are <b>better</b> represented.</br>
+            <iframe src="plots/map_countries_movies_play.html" width="100%" height="600" style="border:none;"></iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="causes" class="tm-section-pad-top tm-parallax-2">
+    <div class="container">
+      <div class="row tm-content-box">
+        <div class="col-lg-12 col-xl-12">
+          <div class="tm-intro-text-container">
+            <h2 class="tm-text-primary mb-4 tm-section-title">Potential causes</h2>
+            <hr class="custom-hr">
+
+            <br>Now, let us explore the potential causes for the increase of women acrtesses in movies. Here we will
+            only take the data on the movies we have access to.
+            We will not be correlating the growing number of actresses to historical events whatsoever.</br>
+            <br>The first thing that should come into your mind is: "What about the movie directors and producers?"
+            Lucky you, the next graphs are about the gender proportions of the latter.</br>
+            <iframe src="plots/gender_distribution_bar.html" width="100%" height="600" style="border:none;"></iframe>
+            <iframe src="plots/director_gender_proportion.html" width="100%" height="600" style="border:none;"></iframe>
+            <iframe src="plots/producer_gender_proportion.html" width="100%" height="600" style="border:none;"></iframe>
+            <iframe src="plots/director_producer_actor_gender_correlation.html" width="100%" height="600"
+              style="border:none;"></iframe>
+          </div>
         </div>
       </div>
-    </section>
-    
-    <section id="quality" class="tm-section-pad-top">
-      <div class="container">
-        <div class="row tm-content-box">
-            <div class="col-lg-12 col-xl-12">
-                <div class="tm-intro-text-container">
-                    <h2 class="tm-text-primary mb-4 tm-section-title">Quality of the increase</h2>
-                    <br>Now is time to evaluate the quality of this encouraging evolution of women involved in the film industry!</br>
-                    <br>First, we will look at the evolution of the age of male and female acotrs. Why? Simply because young women are generally prefered than old women, while we are supposed to appreciate men at every age.</br>
+    </div>
+  </section>
 
-                    <iframe src="plots/age_evolution_plot.html" width="100%" height="600" style="border:none;"></iframe>
-                    <br>Well well well... It seems pretty clear that there is no evolution among the years, but that the difference between genders stays tremendously stable!</br>
-                    
-                    <br>We want to plot the main roles of the characters in wordclouds: one for the men and one for the women characters.</br>
-                    <br></br>
+  <section id="quality" class="tm-section-pad-top">
+    <div class="container">
+      <div class="row tm-content-box">
+        <div class="col-lg-12 col-xl-12">
+          <div class="tm-intro-text-container">
+            <h2 class="tm-text-primary mb-4 tm-section-title">Quality of the increase</h2>
+            <br>Now is time to evaluate the quality of this encouraging evolution of women involved in the film
+            industry!</br>
+            <br>First, we will look at the evolution of the age of male and female acotrs. Why? Simply because young
+            women are generally prefered than old women, while we are supposed to appreciate men at every age.</br>
 
-                    <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
-                      <img src="plots/wordcloud_job_roles.png" width="70%" height="100%" style="border:none;"></img>
-                    </div>
+            <iframe src="plots/age_evolution_plot.html" width="100%" height="600" style="border:none;"></iframe>
+            <br>Well well well... It seems pretty clear that there is no evolution among the years, but that the
+            difference between genders stays tremendously stable!</br>
 
-                    <br>After plotting the roles in wordclouds, we want to plot the roles related to other roles (for instance: in "Mother's girlfriend", we will represent "Girlfriend")</br>
-                    <br></br>
+            <br>We want to plot the main roles of the characters in wordclouds: one for the men and one for the women
+            characters.</br>
+            <br></br>
 
-                    <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
-                      <img src="plots/wordcloud_r2j_roles.png" width="70%" height="100%" style="border:none;"></img>
-                    </div>
-
-                    <br>In order to analyze the quality of the increase in another way,
-                    we used the data from the Bechdel test (<a href="https://bechdeltest.com/">see website here</a>).
-                      Indeed, the Bechdel was originally invented in 1985 in a comic strip by Alison Bechdel and tests whether a movie passes the 3 following conditions:
-                      a) The movie has to have at least two women in it, b) who talk to each other, c) about something other than a man. This results in a score between 0 and 3, depending on the number of tests the movie passes.
-                      It is considered to be a basic standard for minimal women's representation in movies and also includes some women's theorized stereotypes such as the Smurfette principle, which designs the fact that in many stories,
-                      the woman is the exception and exists only in reference to the men. Even though this test is very limited, it offers great insight on the role and representation of the women in any movie.
-                      We thus merged our data with the Bechdel test data (which is entered by hand, where movies are evaluated by individuals) and we plotted the evolution of the Bechdel score over the years.</br>
-                    </br>
-
-                    <iframe src="plots/actors_bdrating_proportion.html" width="100%" height="600" style="border:none;"></iframe>
-
-                    <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
-                      <img src="plots/h_bechdel.png" style="max-width: 60%; max-height: 100%; border: none;">
-                    </div>
-                </div>
+            <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+              <img src="plots/wordcloud_job_roles.png" width="70%" height="100%" style="border:none;"></img>
             </div>
+
+            <br>After plotting the roles in wordclouds, we want to plot the roles related to other roles (for instance:
+            in "Mother's girlfriend", we will represent "Girlfriend")</br>
+            <br></br>
+
+            <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+              <img src="plots/wordcloud_r2j_roles.png" width="70%" height="100%" style="border:none;"></img>
+            </div>
+
+            <br> <br>
+            <h2 class="tm-text-primary mb-4 tm-section-title">Bechdel Test</h2>
+            <hr class="custom-hr">
+
+            <br>In order to analyze the quality of the increase in another way,
+            we used the data from the Bechdel test (<a href="https://bechdeltest.com/">see website here</a>).
+            Indeed, the Bechdel was originally invented in 1985 in a comic strip by Alison Bechdel and tests whether a
+            movie passes the 3 following conditions:
+            a) The movie has to have at least two women in it, b) who talk to each other, c) about something other than
+            a man. This results in a score between 0 and 3, depending on the number of tests the movie passes.
+            It is considered to be a basic standard for minimal women's representation in movies and also includes some
+            women's theorized stereotypes such as the Smurfette principle, which designs the fact that in many stories,
+            the woman is the exception and exists only in reference to the men. Even though this test is very limited,
+            it offers great insight on the role and representation of the women in any movie.
+            We thus merged our data with the Bechdel test data (which is entered by hand, where movies are evaluated by
+            individuals) and we plotted the evolution of the Bechdel score over the years.</br>
+            </br>
+
+            <iframe src="plots/actors_bdrating_proportion.html" width="100%" height="600" style="border:none;"></iframe>
+
+            <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+              <img src="plots/h_bechdel.png" style="max-width: 60%; max-height: 100%; border: none;">
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Contact -->
-    <section id="contact" class="tm-section-pad-top tm-parallax-2">
-    
-      <div class="container tm-container-contact">
+  <!-- Contact -->
+  <!-- <section id="contact" class="tm-section-pad-top tm-parallax-2">
+    <div class="container tm-container-contact">
+      <div class="row">
+        <div class="text-center col-12">
+          <h2 class="tm-section-title mb-4">Contact Us</h2>
+          <p class="mb-5">
+            Kenji Tetard, Aymeric Bacuet, Naël Dillenbourg, François Dumoncel, Lena Vogel </p>
+        </div>
         
-        <div class="row">
-            
-            <div class="text-center col-12">
-                <h2 class="tm-section-title mb-4">Contact Us</h2>
-                <p class="mb-5">
-                  Kenji Tetard, Aymeric Bacuet, Naël Dillenbourg, François Dumoncel, Lena Vogel                </p>
-            </div>
+        <div class="col-sm-12 col-md-6">
 
-            
-            <div class="col-sm-12 col-md-6">
+          <div class="contact-item">
+            <a rel="nofollow" href="https://github.com/epfl-ada/ada-2023-project-adaptateurs" class="item-link">
+              <i class="fas fa-2x fa-users text-center" style="margin-right: 15px;"></i> 
+              <span class="mb-1">Github repository</span>
+            </a>
+          </div>
+          <div class="contact-item">
+            <a rel="nofollow" href="mailto:lena.vogel@epfl.ch" class="item-link">
+              <i class="far fa-2x fa-envelope mr-4"></i>
+              <span class="mb-0">lena.vogel@epfl.ch</span>
+            </a>
+          </div>
 
-                <div class="contact-item">
-                  <a rel="nofollow" href="https://github.com/epfl-ada/ada-2023-project-adaptateurs" class="item-link">
-                      <i class="fas fa-2x fa-users text-center" style="margin-right: 15px;"></i> <!-- Inline CSS -->
-                      <span class="mb-1">Github repository</span>
-                  </a>              
-                </div>
-                <div class="contact-item">
-                  <a rel="nofollow" href="mailto:lena.vogel@epfl.ch" class="item-link">
-                      <i class="far fa-2x fa-envelope mr-4"></i>
-                      <span class="mb-0">lena.vogel@epfl.ch</span>
-                  </a>              
-                </div>
-                
-                <div class="contact-item">
-                  <a rel="nofollow" href="mailto:francois.dumoncel-kessler@epfl.ch" class="item-link">
-                      <i class="far fa-2x fa-envelope mr-4"></i>
-                      <span class="mb-0">francois.dumoncel-kessler@epfl.ch</span>
-                  </a>              
-                </div>
-                <div class="contact-item">
-                  <a rel="nofollow" href="mailto:kenji.tetard@epfl.ch" class="item-link">
-                      <i class="far fa-2x fa-envelope mr-4"></i>
-                      <span class="mb-0">kenji.tetard@epfl.ch</span>
-                  </a>              
-                </div>
-                <div class="contact-item">
-                  <a rel="nofollow" href="mailto:nael.dillenbourg@epfl.ch" class="item-link">
-                      <i class="far fa-2x fa-envelope mr-4"></i>
-                      <span class="mb-0">nael.dillenbourg@epfl.ch</span>
-                  </a>              
-                </div>
-                <div class="contact-item">
-                  <a rel="nofollow" href="mailto:aymeric.bacuet@epfl.ch" class="item-link">
-                      <i class="far fa-2x fa-envelope mr-4"></i>
-                      <span class="mb-0">aymeric.bacuet@epfl.ch</span>
-                  </a>              
-                </div>
-            </div>
-            
-            
-        </div><!-- row ending -->
-        
+          <div class="contact-item">
+            <a rel="nofollow" href="mailto:francois.dumoncel-kessler@epfl.ch" class="item-link">
+              <i class="far fa-2x fa-envelope mr-4"></i>
+              <span class="mb-0">francois.dumoncel-kessler@epfl.ch</span>
+            </a>
+          </div>
+          <div class="contact-item">
+            <a rel="nofollow" href="mailto:kenji.tetard@epfl.ch" class="item-link">
+              <i class="far fa-2x fa-envelope mr-4"></i>
+              <span class="mb-0">kenji.tetard@epfl.ch</span>
+            </a>
+          </div>
+          <div class="contact-item">
+            <a rel="nofollow" href="mailto:nael.dillenbourg@epfl.ch" class="item-link">
+              <i class="far fa-2x fa-envelope mr-4"></i>
+              <span class="mb-0">nael.dillenbourg@epfl.ch</span>
+            </a>
+          </div>
+          <div class="contact-item">
+            <a rel="nofollow" href="mailto:aymeric.bacuet@epfl.ch" class="item-link">
+              <i class="far fa-2x fa-envelope mr-4"></i>
+              <span class="mb-0">aymeric.bacuet@epfl.ch</span>
+            </a>
+          </div>
+        </div>
+
+
       </div>
 
-      	<footer class="text-center small tm-footer">
-          <p class="mb-0">          
-          <a rel="nofollow" href="https://www.tooplate.com" title="HTML templates">Template designed by TOOPLATE</a></p>
-        </footer>                
-    </section>
-    
-    <script src="js/jquery-1.9.1.min.js"></script>     
-    <script src="slick/slick.min.js"></script>
-    <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="js/easing.min.js"></script>
-    <script src="js/jquery.singlePageNav.min.js"></script>     
-    <script src="js/bootstrap.min.js"></script> 
-    <script>
+    </div>
 
-      function getOffSet(){
-        var _offset = 450;
-        var windowHeight = window.innerHeight;
+    <footer class="text-center small tm-footer">
+      <p class="mb-0">
+        <a rel="nofollow" href="https://www.tooplate.com" title="HTML templates">Template designed by TOOPLATE</a>
+      </p>
+    </footer>
+  </section> -->
 
-        if(windowHeight > 500) {
-          _offset = 400;
-        } 
-        if(windowHeight > 680) {
-          _offset = 300
-        }
-        if(windowHeight > 830) {
-          _offset = 210;
-        }
+  <div class="contact">
+    <div class="title">
+      <h2>The Team</h2>
+    </div>
+    <footer class="team-footer">
+      <div class="team-member">
+        <img src="img/team/fran.jpeg" alt="Member 1">
+        <p>François Dumoncel
+          <br> Master in Data Science
+        </p>
+      </div>
+      <div class="team-member">
+        <img src="img/team/fran.jpeg" alt="Member 2">
+        <p>Lena vogel
+          <br> Master in Life Science?
+        </p>
+      </div>
+      <div class="team-member">
+        <img src="img/team/fran.jpeg" alt="Member 3">
+        <p>Nael Dillenbourg
+          <br> Master in Robotics?
+        </p>
+      </div>
+      <div class="team-member">
+        <img src="img/team/fran.jpeg" alt="Member 4">
+        <p>Aymeric Bacuet
+          <br> Master in Data Science
+        </p>
+      </div>
+      <div class="team-member">
+        <img src="img/team/fran.jpeg" alt="Member 5">
+        <p>Kenji Tetard
+          <br> Master in Data Science
+        </p>
+      </div>
+    </footer>
+  </div>
 
-        return _offset;
+  <style>
+    .contact {
+      color: #000;
+      padding: 40px;
+      background: url("img/gradient/gradient.jpg");
+    }
+
+    .contact > .title {
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .team-footer {
+      padding: 30px;
+      background: none;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .team-member {
+      margin: 0 10px;
+      text-align: center;
+    }
+
+    .team-member img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid #000;
+    }
+
+    .team-member p {
+      color: #000;
+      margin-top: 25px;
+      font-weight: bold;
+      font-size: 17px;
+    }
+  </style>
+
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="slick/slick.min.js"></script>
+  <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
+  <script src="js/easing.min.js"></script>
+  <script src="js/jquery.singlePageNav.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+
+    function getOffSet() {
+      var _offset = 450;
+      var windowHeight = window.innerHeight;
+
+      if (windowHeight > 500) {
+        _offset = 400;
+      }
+      if (windowHeight > 680) {
+        _offset = 300
+      }
+      if (windowHeight > 830) {
+        _offset = 210;
       }
 
-      function setParallaxPosition($doc, multiplier, $object){
-        var offset = getOffSet();
-        var from_top = $doc.scrollTop(),
-          bg_css = 'center ' +(multiplier * from_top - offset) + 'px';
-        $object.css({"background-position" : bg_css });
-      }
+      return _offset;
+    }
 
-      // Parallax function
-      // Adapted based on https://codepen.io/roborich/pen/wpAsm        
-      var background_image_parallax = function($object, multiplier, forceSet){
-        multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
-        multiplier = 1 - multiplier;
-        var $doc = $(document);
-        // $object.css({"background-attatchment" : "fixed"});
+    function setParallaxPosition($doc, multiplier, $object) {
+      var offset = getOffSet();
+      var from_top = $doc.scrollTop(),
+        bg_css = 'center ' + (multiplier * from_top - offset) + 'px';
+      $object.css({ "background-position": bg_css });
+    }
 
-        if(forceSet) {
+    // Parallax function
+    // Adapted based on https://codepen.io/roborich/pen/wpAsm        
+    var background_image_parallax = function ($object, multiplier, forceSet) {
+      multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
+      multiplier = 1 - multiplier;
+      var $doc = $(document);
+      // $object.css({"background-attatchment" : "fixed"});
+
+      if (forceSet) {
+        setParallaxPosition($doc, multiplier, $object);
+      } else {
+        $(window).scroll(function () {
           setParallaxPosition($doc, multiplier, $object);
+        });
+      }
+    };
+
+    var background_image_parallax_2 = function ($object, multiplier) {
+      multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
+      multiplier = 1 - multiplier;
+      var $doc = $(document);
+      $object.css({ "background-attachment": "fixed" });
+
+      $(window).scroll(function () {
+        if ($(window).width() > 768) {
+          var firstTop = $object.offset().top,
+            pos = $(window).scrollTop(),
+            yPos = Math.round((multiplier * (firstTop - pos)) - 186);
+
+          var bg_css = 'center ' + yPos + 'px';
+
+          $object.css({ "background-position": bg_css });
         } else {
-          $(window).scroll(function(){          
-            setParallaxPosition($doc, multiplier, $object);
-          });
+          $object.css({ "background-position": "center" });
         }
-      };
-
-      var background_image_parallax_2 = function($object, multiplier){
-        multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
-        multiplier = 1 - multiplier;
-        var $doc = $(document);
-        $object.css({"background-attachment" : "fixed"});
-        
-        $(window).scroll(function(){
-          if($(window).width() > 768) {
-            var firstTop = $object.offset().top,
-                pos = $(window).scrollTop(),
-                yPos = Math.round((multiplier * (firstTop - pos)) - 186);              
-
-            var bg_css = 'center ' + yPos + 'px';
-
-            $object.css({"background-position" : bg_css });
-          } else {
-            $object.css({"background-position" : "center" });
-          }
+      });
+    };
+    window.onscroll = function () {
+      var navLinks = document.querySelectorAll('.nav-link');
+      if (document.documentElement.scrollTop > 50) {
+        navLinks.forEach(function (link) {
+          link.classList.add('nav-link-scrolled');
         });
-      };
-      window.onscroll = function() {
-          var navLinks = document.querySelectorAll('.nav-link');
-          if (document.documentElement.scrollTop > 50) {
-              navLinks.forEach(function(link) {
-                  link.classList.add('nav-link-scrolled');
-              });
-          } else {
-              navLinks.forEach(function(link) {
-                  link.classList.remove('nav-link-scrolled');
-              });
-          }
-      };
-      $(function(){
-        // Hero Section - Background Parallax
-        background_image_parallax($(".tm-parallax"), 0.30, false);
-        background_image_parallax_2($("#contact"), 0.80);   
-        background_image_parallax_2($("#testimonials"), 0.80);   
-        
-        // Handle window resize
-        window.addEventListener('resize', function(){
-          background_image_parallax($(".tm-parallax"), 0.30, true);
-        }, true);
-
-        // Detect window scroll and update navbar
-        $(window).scroll(function(e){          
-          if($(document).scrollTop() > 120) {
-            $('.tm-navbar').addClass("scroll");
-          } else {
-            $('.tm-navbar').removeClass("scroll");
-          }
+      } else {
+        navLinks.forEach(function (link) {
+          link.classList.remove('nav-link-scrolled');
         });
-        
-        // Close mobile menu after click 
-        $('#tmNav a').on('click', function(){
-          $('.navbar-collapse').removeClass('show'); 
-        })
+      }
+    };
+    $(function () {
+      // Hero Section - Background Parallax
+      background_image_parallax($(".tm-parallax"), 0.30, false);
+      background_image_parallax_2($("#contact"), 0.80);
+      background_image_parallax_2($("#testimonials"), 0.80);
 
-        // Scroll to corresponding section with animation
-        $('#tmNav').singlePageNav({
-          'easing': 'easeInOutExpo',
-          'speed': 600
-        });        
-        
-        // Add smooth scrolling to all links
-        // https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
-        $("a").on('click', function(event) {
-          if (this.hash !== "") {
-            event.preventDefault();
-            var hash = this.hash;
+      // Handle window resize
+      window.addEventListener('resize', function () {
+        background_image_parallax($(".tm-parallax"), 0.30, true);
+      }, true);
 
-            $('html, body').animate({
-              scrollTop: $(hash).offset().top
-            }, 600, 'easeInOutExpo', function(){
-              window.location.hash = hash;
-            });
-          } // End if
-        });
+      // Detect window scroll and update navbar
+      $(window).scroll(function (e) {
+        if ($(document).scrollTop() > 120) {
+          $('.tm-navbar').addClass("scroll");
+        } else {
+          $('.tm-navbar').removeClass("scroll");
+        }
+      });
 
-        // Pop up
-        $('.tm-gallery').magnificPopup({
-          delegate: 'a',
-          type: 'image',
-          gallery: { enabled: true }
-        });
+      // Close mobile menu after click 
+      $('#tmNav a').on('click', function () {
+        $('.navbar-collapse').removeClass('show');
+      })
 
-        $('.tm-testimonials-carousel').slick({
-          dots: true,
-          prevArrow: false,
-          nextArrow: false,
-          infinite: false,
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          responsive: [
-            {
-              breakpoint: 992,
-              settings: {
-                slidesToShow: 2
-              }
-            },
-            {
-              breakpoint: 768,
-              settings: {
-                slidesToShow: 2
-              }
-            }, 
-            {
-              breakpoint: 480,
-              settings: {
-                  slidesToShow: 1
-              }                 
+      // Scroll to corresponding section with animation
+      $('#tmNav').singlePageNav({
+        'easing': 'easeInOutExpo',
+        'speed': 600
+      });
+
+      // Add smooth scrolling to all links
+      // https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
+      $("a").on('click', function (event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 600, 'easeInOutExpo', function () {
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+
+      // Pop up
+      $('.tm-gallery').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        gallery: { enabled: true }
+      });
+
+      $('.tm-testimonials-carousel').slick({
+        dots: true,
+        prevArrow: false,
+        nextArrow: false,
+        infinite: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 2
             }
-          ]
-        });
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
 
-        // Gallery
-        $('.tm-gallery').slick({
-          dots: true,
-          infinite: false,
-          slidesToShow: 5,
-          slidesToScroll: 2,
-          responsive: [
+      // Gallery
+      $('.tm-gallery').slick({
+        dots: true,
+        infinite: false,
+        slidesToShow: 5,
+        slidesToScroll: 2,
+        responsive: [
           {
             breakpoint: 1199,
             settings: {
@@ -413,8 +536,9 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
             }
           }
         ]
-        });
       });
-    </script>
-  </body>
+    });
+  </script>
+</body>
+
 </html>
