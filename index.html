@@ -63,10 +63,17 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
                         <h2 class="tm-text-primary mb-4 tm-section-title">Actors and actresses</h2>
                         <br>Through the feminist struggles and the recent advances in gender equality, women have gained space and importance in movies.</br>
                         <br>Indeed, the cinematic world has long been a mirror reflecting societal norms and changes, and nowhere is this more evident than in the representation of women.</br>
-                        <br></br>
+                        <br>This year, among the <a href="https://www.festival-cannes.com/selection/">21 movies competing for the Cannes festival</a>, 7 of them were directed by women.</br>
+                        <br>Moreover, it is easy to see that movies, TV shows and other forms of art talk more and more about women realities, letting the archaic male-gaze in the past.</br>
+                        <br>In this study, we will try and understand gendered dynamics that could involved in the film industry. To do so, we will be using the CMU Movie Corpus dataset.
+                          It contains around 80'000 movies released between 1914 and 2012. Here is a graph to show you the evolution of the number of movies released per year!</br>
 
                         <iframe src="plots/movie_distribution.html" width="100%" height="600" style="border:none;"></iframe>
+                        <br>See? There are, of course very few movies before 1980, this is why for future graphs which represent values per year, we will restrain the years range to the 30 years between 1980 and 2010 only.</br>
+                        <br>First, we could ask ourselves the following question: "Are there more women actresses who play characters in movies now than before?"</br>
                         <iframe src="plots/actors_gender_proportion.html" width="100%" height="600" style="border:none;"></iframe>
+                        <br>That is interesting! From 1980 to 2010, the proportion of women actresses compared to men increased of more than 7%! It is not a huge increase, but it still is considerable.
+                        We'll have to investigate more on that and the potential causes for this increase, as well as whether when women are <b>more</b> represented, it also imply they are <b>better</b> represented.</br>
                         <iframe src="plots/map_countries_movies_play.html" width="100%" height="600" style="border:none;"></iframe>
                     </div>
                 </div>
@@ -81,8 +88,14 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
             <div class="col-lg-12 col-xl-12">
                 <div class="tm-intro-text-container">
                     <h2 class="tm-text-primary mb-4 tm-section-title">Potential causes</h2>
-                    <br>blablabla</br>
-                    <iframe src="plots/gender_distribution.html" width="100%" height="600" style="border:none;"></iframe>
+                    <br>Now, let us explore the potential causes for the increase of women acrtesses in movies. Here we will only take the data on the movies we have access to.
+                    We will not be correlating the growing number of actresses to historical events whatsoever.</br>
+                    <br>The first thing that should come into your mind is: "What about the movie directors and producers?"
+                      Lucky you, the next graphs are about the gender proportions of the latter.</br>
+                    <iframe src="plots/gender_distribution_bar.html" width="100%" height="600" style="border:none;"></iframe>
+                    <iframe src="plots/director_gender_proportion.html" width="100%" height="600" style="border:none;"></iframe>
+                    <iframe src="plots/producer_gender_proportion.html" width="100%" height="600" style="border:none;"></iframe>
+                    <iframe src="plots/director_producer_actor_gender_correlation.html" width="100%" height="600" style="border:none;"></iframe>
                 </div>
             </div>
         </div>
@@ -96,9 +109,10 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
                 <div class="tm-intro-text-container">
                     <h2 class="tm-text-primary mb-4 tm-section-title">Quality of the increase</h2>
                     <br>Now is time to evaluate the quality of this encouraging evolution of women involved in the film industry!</br>
-                    <br>First, we will look at the evolution of the age of male and female acotrs</br>
+                    <br>First, we will look at the evolution of the age of male and female acotrs. Why? Simply because young women are generally prefered than old women, while we are supposed to appreciate men at every age.</br>
 
                     <iframe src="plots/age_evolution_plot.html" width="100%" height="600" style="border:none;"></iframe>
+                    <br>Well well well... It seems pretty clear that there is no evolution among the years, but that the difference between genders stays tremendously stable!</br>
                     
                     <br>We want to plot the main roles of the characters in wordclouds: one for the men and one for the women characters.</br>
                     <br></br>
@@ -122,6 +136,8 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
                       the woman is the exception and exists only in reference to the men. Even though this test is very limited, it offers great insight on the role and representation of the women in any movie.
                       We thus merged our data with the Bechdel test data (which is entered by hand, where movies are evaluated by individuals) and we plotted the evolution of the Bechdel score over the years.</br>
                     </br>
+
+                    <iframe src="plots/actors_bdrating_proportion.html" width="100%" height="600" style="border:none;"></iframe>
 
                     <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
                       <img src="plots/h_bechdel.png" style="max-width: 60%; max-height: 100%; border: none;">
