@@ -152,9 +152,8 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
                         So let's see if, despite the small number of directors and producers, there is a correlation 
                         with the proportion of actresses.<br />
                       
-                        <iframe src="plots/director_producer_actor_gender_correlation.html" width="100%" height="600"
+                        <iframe src="plots/director_producer_actor_gender_correlation.html" width="100%" height="550"
                             style="border:none;"></iframe>
-                        <br />
                         Despite the last sad discoveries, here it seems like there is a correlation between the proportion of actresses and the involvement
                         of a female director or a female producer. When both director and producer are women, it seems like the proportion of actresses is even higher.
                     </div>
@@ -290,11 +289,25 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
                             Or perhaps, the audience, like a river, naturally flows towards the stories
                             echoing a significant male
                             presence. So is it the chicken or the egg?
+
+                        </p>
+                        <div class="image" style="width: 60%;">
+                            <img style="max-width: 100%; height: auto; display:block"
+                                src="plots/corr_matrix.png" alt="Correlation matrix">
+                        </div>
+                        <p>
+                            The biggest correlation among the ones we covered is the correlation between the popularity
+                            and the box-office revenue, which is quite an obvious correlation: the more people like the 
+                            movie, the more they pay and go to the cinema to watch it! The Bechdel rating, however,
+                            does not show great correlation, but in general, the higher the Bechdel rating, the lower the
+                            box-office revenue, the popularity and the vote average.<br /><br />
+
                             But wait, there's another twist in the tale. Could it be that men and women don't often
                             share the same cinematic playground, creating a division in movie genres, where some genres
                             naturally attract more fame and followers?
-                        </p>
+                        </p><br />
 
+                        <h3>Movie Genres</h3>
                         <iframe src="plots/bd_genre_ds.html" width="100%" height="600" style="border:none;"></iframe>
 
                         <p>
