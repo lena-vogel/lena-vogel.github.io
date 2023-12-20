@@ -236,95 +236,68 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
                             Let's
                             delve into this intriguing topic together.</p>
 
-                            However, we need to be careful with those data, because not all movies from the CMU Dataset have been evaluated by the Bechdel test. We should also consider that there is a biais on the set of movies that were entered by hand in this Bechdel dataset.<br />
-                            <iframe src="plots/number_of_movies_bechdel.html" width="100%" height="600" style="border:none;"></iframe>
-                            As one can see, only between 16 and 140 movies were evaluated per year, which is a very small number compared to the total number of movies released per year (between 1980 and 2010).<br />
-        
-                            <iframe src="plots/actors_bdrating_proportion.html" width="100%" height="600" style="border:none;"></iframe>
-        
-                            <iframe src="plots/bd_rating_evolution.html" width="100%" height="600" style="border:none;"></iframe>        
+                        However, we need to be careful with those data, because not all movies from the CMU Dataset have
+                        been evaluated by the Bechdel test. We should also consider that there is a bias on the set of
+                        movies that were entered by hand in this Bechdel dataset.<br />
+                        <iframe src="plots/number_of_movies_bechdel.html" width="100%" height="600"
+                            style="border:none;"></iframe>
+                        As one can see, only between 16 and 140 movies were evaluated per year, which is a very small
+                        number compared to the total number of movies released per year (between 1980 and 2010). Let's
+                        start this analysis, do you think that movies with higher Bechdel rating involve more women ?
+                        <br />
+
+                        <iframe src="plots/actors_bdrating_proportion.html" width="100%" height="600"
+                            style="border:none;"></iframe>
+
                         <p>
                             It is obvious that a higher Bechdel rating typically indicates a greater representation of
                             women (>20% increase for movies which completely pass the Bechdel test compared to the ones
-                            that do not), by the test's inherent design. So movies with higher number of actress tends to have 
+                            that do not), by the test's inherent design. So movies with higher number of actress tends
+                            to have
                             a higher Bechdel rating. But does this better rating influences the impact on the audience?
                         </p>
 
+                        <!-- <iframe src="plots/bd_rating_evolution.html" width="100%" height="600" style="border:none;"></iframe>         -->
+
+
                         <iframe src="plots/popularity.html" width="100%" height="600" style="border:none;"></iframe>
 
-                        <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                        <p>
+                            There's an intriguing pattern in these glitzy displays: movies that seem to have a lower
+                            Bechdel Rating are often the ones that bask in the limelight of popularity. Why is
+                            this so? The answers aren't straightforward. This could be multiple confounder into this
+                            complex
+                            tapestry. It could be that the film
+                            industry, with its influential might, chooses to shine a brighter spotlight on movies where
+                            male characters take the
+                            center stage. Or perhaps, the audience, like a river, naturally flows towards the stories
+                            echoing a significant male
+                            presence.
+                            But wait, there's another twist in the tale. Could it be that men and women don't often
+                            share the same cinematic playground, creating a divide in movie genres, where some genres
+                            naturally attract more fame and followers?
+                        </p>
+
+                        <iframe src="plots/bd_genre_ds.html" width="100%" height="600" style="border:none;"></iframe>
+
+                        <p>
+                            As you can see, the distribution of male and female actors varies significantly across movie genres. Female
+                            actors are more frequently seen in LGBT, Drama, and Romance films, whereas they are less
+                            prevalent in Action or Crime movies. How could we make this irrelevant... ?
+
+                        </p>
+
+                        <h3> A friend to the rescue: Matching</h3>
+
+                        <!-- <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
                             <img src="plots/h_bechdel.png" style="max-width: 60%; max-height: 100%; border: none;">
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-
-
-    <!-- Contact -->
-    <!-- <section id="contact" class="tm-section-pad-top tm-parallax-2">
-    <div class="container tm-container-contact">
-      <div class="row">
-        <div class="text-center col-12">
-          <h2 class="tm-section-title mb-4">Contact Us</h2>
-          <p class="mb-5">
-            Kenji Tetard, Aymeric Bacuet, Naël Dillenbourg, François Dumoncel, Lena Vogel </p>
-        </div>
-        
-        <div class="col-sm-12 col-md-6">
-
-          <div class="contact-item">
-            <a rel="nofollow" href="https://github.com/epfl-ada/ada-2023-project-adaptateurs" class="item-link">
-              <i class="fas fa-2x fa-users text-center" style="margin-right: 15px;"></i> 
-              <span class="mb-1">Github repository</span>
-            </a>
-          </div>
-          <div class="contact-item">
-            <a rel="nofollow" href="mailto:lena.vogel@epfl.ch" class="item-link">
-              <i class="far fa-2x fa-envelope mr-4"></i>
-              <span class="mb-0">lena.vogel@epfl.ch</span>
-            </a>
-          </div>
-
-          <div class="contact-item">
-            <a rel="nofollow" href="mailto:francois.dumoncel-kessler@epfl.ch" class="item-link">
-              <i class="far fa-2x fa-envelope mr-4"></i>
-              <span class="mb-0">francois.dumoncel-kessler@epfl.ch</span>
-            </a>
-          </div>
-          <div class="contact-item">
-            <a rel="nofollow" href="mailto:kenji.tetard@epfl.ch" class="item-link">
-              <i class="far fa-2x fa-envelope mr-4"></i>
-              <span class="mb-0">kenji.tetard@epfl.ch</span>
-            </a>
-          </div>
-          <div class="contact-item">
-            <a rel="nofollow" href="mailto:nael.dillenbourg@epfl.ch" class="item-link">
-              <i class="far fa-2x fa-envelope mr-4"></i>
-              <span class="mb-0">nael.dillenbourg@epfl.ch</span>
-            </a>
-          </div>
-          <div class="contact-item">
-            <a rel="nofollow" href="mailto:aymeric.bacuet@epfl.ch" class="item-link">
-              <i class="far fa-2x fa-envelope mr-4"></i>
-              <span class="mb-0">aymeric.bacuet@epfl.ch</span>
-            </a>
-          </div>
-        </div>
-
-
-      </div>
-
-    </div>
-
-    <footer class="text-center small tm-footer">
-      <p class="mb-0">
-        <a rel="nofollow" href="https://www.tooplate.com" title="HTML templates">Template designed by TOOPLATE</a>
-      </p>
-    </footer>
-  </section> -->
 
     <div class="contact">
         <div class="title">
