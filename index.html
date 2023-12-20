@@ -281,13 +281,40 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
                         <iframe src="plots/bd_genre_ds.html" width="100%" height="600" style="border:none;"></iframe>
 
                         <p>
-                            As you can see, the distribution of male and female actors varies significantly across movie genres. Female
+                            As you can see, the distribution of male and female actors varies significantly across movie
+                            genres. Female
                             actors are more frequently seen in LGBT, Drama, and Romance films, whereas they are less
                             prevalent in Action or Crime movies. How could we make this irrelevant... ?
-
                         </p>
-
+                        <br>
                         <h3> A friend to the rescue: Matching</h3>
+
+                        <br>
+                        <p>
+                            Have you ever heard about Matching ? It's a relatively new concept in statistics,
+                            popularized by Donald Rubin in the 1980s. You can think of Matching as your trusty sidekick
+                            in reducing bias when estimating treatment effects in observational studies. Here's the
+                            challenge: for every treated unit in your study, you need to find one or more non-treated
+                            units. But not just any units will do. These counterparts must be similar in observable
+                            characteristics, creating a perfect balance against which the covariates are evenly matched.
+                            <br><br>
+                            Here, we will perform exact one-to-one matching, based on the main genre of the movie.
+                            By comparing movies within these genre-matched pairs, we can more accurately assess the
+                            impact of genre on both Bechdel Ratings and audience popularity. This controlled comparison
+                            helps isolate the variable of genre, allowing for a clearer understanding of its role. We will have two groups
+                            <ul>
+                                <li>
+                                    <b>Treatment Group</b>: Movies from a genre that typically scores high on the Bechdel test.
+                                </li>
+                                <li>
+                                    <b>Control Group</b>: Movies from a genre that typically scores low on the Bechdel test.
+                                </li>
+                            </ul>
+
+                            Doing this on our dataset, we get 880 pairs of matched movies! Let's see what we can learn from this.
+                            We want to know if the Bechdel rating plays a role in the popularity of a movie. So, let's try to estimate the following 
+                            linear regression
+                        </p>
 
                         <!-- <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
                             <img src="plots/h_bechdel.png" style="max-width: 60%; max-height: 100%; border: none;">
