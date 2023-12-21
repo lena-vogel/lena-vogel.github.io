@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/tooplate-infinite-loop.css" />
+    <script type="text/javascript" async=""
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
     <!--
 Tooplate 2117 Infinite Loop
 https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.0 HTML Template
@@ -22,31 +25,6 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
 <body>
     <!-- Hero section -->
     <section id="about" class="text-white tm-font-big tm-parallax">
-        <!-- Navigation -->
-        <!-- <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">              
-        <div class="container">
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="#actresses">Actors & actresses</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link tm-nav-link" href="#causes">Potential causes</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="#quality">Quality of the increase</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link tm-nav-link" href="#contact">Contact</a>
-              </li>                    
-            </ul>
-          </div>        
-        </div>
-      </nav> -->
-
         <div class="text-center tm-hero-text-container">
             <div class="tm-hero-text-container-inner">
                 <h2 class="tm-hero-title">Are women in movies clickbait feminism?</h2>
@@ -92,13 +70,14 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
                         at play in the film industry. Our guide? The CMU Movie Corpus dataset, a dataset of around
                         80,000
                         movies released between 1914 and 2012. To start, let us show you a first insight on the dataset
-                        we are working with, look at the graph below which tracks the evolution of movie releases through 
+                        we are working with, look at the graph below which tracks the evolution of movie releases
+                        through
                         the years.</br>
 
                         <iframe src="plots/movie_distribution.html" width="100%" height="600"
                             style="border:none;"></iframe>
-                        <br>See? There are very few movies before 1980, this is why for the visual simplicity of future 
-                        graphs which represent values per year, we will restrain the years range to the 30 years between 
+                        <br>See? There are very few movies before 1980, this is why for the visual simplicity of future
+                        graphs which represent values per year, we will restrain the years range to the 30 years between
                         1980 and 2010 only.</br>
                         <br>First, we could ask ourselves the following question: "Are there more women actresses who
                         play
@@ -137,7 +116,8 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
                         <iframe src="plots/gender_distribution_bar.html" width="100%" height="600"
                             style="border:none;"></iframe>
                         <br />
-                        It is quite crazy to see such a low propotion of female directors, it is even lower than the percentage
+                        It is quite crazy to see such a low propotion of female directors, it is even lower than the
+                        percentage
                         of producers! So let's see how this proportion evolved through the years.<br />
 
                         <iframe src="plots/director_gender_proportion.html" width="100%" height="600"
@@ -149,13 +129,15 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
                             style="border:none;"></iframe>
                         <br />
                         Well well well, we should have kept our excpectations low, because it is the same story here!
-                        So let's see if, despite the small number of directors and producers, there is a correlation 
+                        So let's see if, despite the small number of directors and producers, there is a correlation
                         with the proportion of actresses.<br />
-                      
+
                         <iframe src="plots/director_producer_actor_gender_correlation.html" width="100%" height="550"
                             style="border:none;"></iframe>
-                        Despite the last sad discoveries, here it seems like there is a correlation between the proportion of actresses and the involvement
-                        of a female director or a female producer. When both director and producer are women, it seems like the proportion of actresses is even higher.
+                        Despite the last sad discoveries, here it seems like there is a correlation between the
+                        proportion of actresses and the involvement
+                        of a female director or a female producer. When both director and producer are women, it seems
+                        like the proportion of actresses is even higher.
                     </div>
                 </div>
             </div>
@@ -184,8 +166,10 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
                         <h3>Actors roles</h3>
                         We want to plot the main roles of the characters in wordclouds: one for the men and one for the
                         women characters.<br />
-                        Please note that most of the characters collected in the dataset are only mentioned by name, and not by
-                        role. Thus, we will only plot the roles of the characters that have a role. In a wordcloud, the most
+                        Please note that most of the characters collected in the dataset are only mentioned by name, and
+                        not by
+                        role. Thus, we will only plot the roles of the characters that have a role. In a wordcloud, the
+                        most
                         mentionned roles are represented by a bigger size.<br />
                         <br />
 
@@ -194,7 +178,8 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
                                 style="border:none;"></img>
                         </div><br />
 
-                        Looking at these wordclouds, it seems quite clear that women mostly are designated as family members, 
+                        Looking at these wordclouds, it seems quite clear that women mostly are designated as family
+                        members,
                         while men mainly are designated by their job position.
                         And now, we want to plot the roles related to other roles (for
                         instance: in "Mother's girlfriend", we will represent "Girlfriend")<br />
@@ -204,9 +189,12 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
                             <img src="plots/wordcloud_r2j_roles.png" width="70%" height="100%"
                                 style="border:none;"></img>
                         </div><br />
-                        Here, the data are more chaotic, so there is not much to say, appart from the fact that there is 
+                        Here, the data are more chaotic, so there is not much to say, appart from the fact that there is
                         again a predominance of family members in women, while men have job positions.
                         We can also notice that <br /><br />
+                        <br>
+                        <br>
+                        <br>
 
                         <h2 class="tm-text-primary mb-4 tm-section-title">Bechdel Test</h2>
                         <div class="container-bd" style="display: flex; align-items: flex-start;">
@@ -229,9 +217,11 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
                                     reality is a bit more complex...</p>
 
                                 <p>We've managed to gather Bechdel Score data for 2,658 films, thanks to the API from
-                                  the <a href="https://bechdeltest.com/">Bechdel Test website</a>. It is important to note
-                                  that anyone can enter data on whether a film passes the Bechdel Test or not, on a scale to 0 to 3.
-                                  The lingering question remains: Has the Bechdel Test influenced the
+                                    the <a href="https://bechdeltest.com/">Bechdel Test website</a>. It is important to
+                                    note
+                                    that anyone can enter data on whether a film passes the Bechdel Test or not, on a
+                                    scale to 0 to 3.
+                                    The lingering question remains: Has the Bechdel Test influenced the
                                     audience's
                                     perception and the representation of women in the film industry?</p>
 
@@ -255,13 +245,15 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
                         movies that were entered by hand in this Bechdel dataset.<br />
                         <iframe src="plots/number_of_movies_bechdel.html" width="100%" height="600"
                             style="border:none;"></iframe>
+                       
+                        <iframe src="plots/bd_rating_evolution.html" width="100%" height="600"
+                            style="border:none;"></iframe> 
+
                         As one can see, only between 16 and 140 movies were evaluated per year, which is a very small
                         number compared to the total number of movies released per year (between 1980 and 2010). Let's
                         start this analysis, by looking at the evolution of the Bechdel rating through the years.<br />
-
-                        <iframe src="plots/bd_rating_evolution.html" width="100%" height="600" style="border:none;"></iframe>         -->
-
-                        And do you think that movies with higher Bechdel rating involve more women ? <br />
+    
+                        Now, do you think that movies with higher Bechdel rating involve more women ? <br />
 
                         <iframe src="plots/actors_bdrating_proportion.html" width="100%" height="600"
                             style="border:none;"></iframe>
@@ -286,26 +278,20 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
                             complex
                             tapestry. It could be that the film
                             industry, with its influential might, chooses to shine a brighter spotlight on movies where
-                            male characters take the center stage, and where women only are... present. 
+                            male characters take the center stage, and where women only are... present.
                             Or perhaps, the audience, like a river, naturally flows towards the stories
                             echoing a significant male
                             presence. So is it the chicken or the egg?
                             Let's see if we can find any pattern between the percentage of actresses and the rating:
                         </p>
-                        <iframe src="plots/regression_actresses_rating.html" width="100%" height="600" style="border:none;"></iframe>
-                        There is a very small correlation between the percentage of actresses and the rating, but it is
-                        not significant.
-
-                        <div class="image" style="width: 60%;">
-                            <img style="max-width: 100%; height: auto; display:block"
-                                src="plots/corr_matrix.png" alt="Correlation matrix">
-                        </div>
+    
 
                         <p>
                             The biggest correlation among the ones we covered is the correlation between the popularity
-                            and the box-office revenue, which is quite an obvious correlation: the more people like the 
+                            and the box-office revenue, which is quite an obvious correlation: the more people like the
                             movie, the more they pay and go to the cinema to watch it! The Bechdel rating, however,
-                            does not show great correlation, but in general, the higher the Bechdel rating, the lower the
+                            does not show great correlation, but in general, the higher the Bechdel rating, the lower
+                            the
                             box-office revenue, the popularity and the vote average.<br /><br />
 
                             But wait, there's another twist in the tale. Could it be that men and women don't often
@@ -326,30 +312,85 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
                         <h3> A friend to the rescue: Matching</h3>
 
                         <br>
-                        <p>
-                            Have you ever heard about Matching ? It's a relatively new concept in statistics,
-                            popularized by Donald Rubin in the 1980s. You can think of Matching as your trusty sidekick
-                            in reducing bias when estimating treatment effects in observational studies. Here's the
-                            challenge: for every treated unit in your study, you need to find one or more non-treated
-                            units. But not just any units will do. These counterparts must be similar in observable
-                            characteristics, creating a perfect balance against which the covariates are evenly matched.
-                            <br><br>
-                            Here, we will perform exact one-to-one matching, based on the main genre of the movie.
-                            By comparing movies within these genre-matched pairs, we can more accurately assess the
-                            impact of genre on both Bechdel Ratings and audience popularity. This controlled comparison
-                            helps isolate the variable of genre, allowing for a clearer understanding of its role. We will have two groups
-                            <ul>
-                                <li>
-                                    <b>Treatment Group</b>: Movies from a genre that typically scores high on the Bechdel test.
-                                </li>
-                                <li>
-                                    <b>Control Group</b>: Movies from a genre that typically scores low on the Bechdel test.
-                                </li>
-                            </ul>
+                        Have you ever heard about Matching ? It's a relatively new concept in statistics,
+                        popularized by Donald Rubin in the 1980s. You can think of Matching as your trusty sidekick
+                        in reducing bias when estimating treatment effects in observational studies. Here's the
+                        challenge: for every treated unit in your study, you need to find one or more non-treated
+                        units. But not just any units will do. These counterparts must be similar in observable
+                        characteristics, creating a perfect balance against which the covariates are evenly matched.
+                        <br><br>
+                        Here, we will perform exact one-to-one matching, based on the main genre of the movie.
+                        By comparing movies within these genre-matched pairs, we can more accurately assess the
+                        impact of genre on both Bechdel Ratings and audience popularity. This controlled comparison
+                        helps isolate the variable of genre, allowing for a clearer understanding of its role. We
+                        will have two groups
+                        <br>
+                        <br>
 
-                            Doing this on our dataset, we get 880 pairs of matched movies! Let's see what we can learn from this.
-                            We want to know if the Bechdel rating plays a role in the popularity of a movie. So, let's try to estimate the following 
-                            linear regression
+                        <ul>
+                            <li>
+                                <b>Treatment Group</b>: Movies from a genre that typically scores high on the
+                                Bechdel
+                                test.
+                            </li>
+                            <li>
+                                <b>Control Group</b>: Movies from a genre that typically scores low on the Bechdel
+                                test.
+                            </li>
+                        </ul>
+
+                        Doing this on our dataset, we get 880 pairs of matched movies! Let's see what we can learn
+                        from
+                        this.
+                        We want to know if the Bechdel rating plays a role in the popularity of a movie. So, let's
+                        try
+                        to estimate the following linear regression <code
+                            style="color: crimson;">popularity ~ bechdel_rating</code>. We obtain that <br>
+
+                        <p><span class="math display">\[\texttt{popularity} = \beta_0 + \beta_1 \times
+                                \texttt{bechdel_rating} = 9.4 - 0.1140 \times \texttt{bechdel_rating}\]</span></p>
+
+                        It seems that the Bechdel rating and the popularity are <i>negatively</i> correlated.
+                        Interesting, isn't it ? In fact... not really. What is important to mention is also the
+                        \(p\)-value of these coefficients. It turns out that
+                        the \(p\)-value of the \(\texttt{bechdel_rating}\) is \(0.450\), which means that the value of
+                        \(\beta_1\)
+                        is <b>not</b>
+                        statistically significant. The Bechdel rating, therefore, does not impact a movie's popularity,
+                        and as a result, producers are not concerned with it. <br>
+                        </p>
+
+                        <p>
+                            Let's now look at the correlation directly between the Bechdel rating and the popularity,
+                            the box-office revenue and the vote average.
+                        </p>
+
+                        <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                            <img src="img/correlation.png" width="100%" height="100%" style="border:none;"></img>
+                        </div><br />
+
+                        <p>
+                            The heatmap on the right is showcasing the \(p\)-values linked with correlation
+                            coefficients from the left heatmap. All these values are between \(0.00\) and \(0.05\). This
+                            tiny
+                            detail is crucial. The patterns you see on the left
+                            heatmap aren't mere coincidences. They're statistically significant!
+                            <br><br>
+                            Let's focus back on the left heatmap. Here, the coefficients are quantified on a scale from
+                            -1 to 1. Imagine this scale as a spectrum. At one end, -1 signals a perfectly inverse
+                            correlation, like two dancers moving in opposite directions. At the other end, 1 suggests a
+                            perfectly direct correlation, akin to synchronized swimmers moving in harmony. And in the
+                            middle, 0 stands for no correlation, like independent artists painting in their own styles.
+                            <br><br>
+                            Now, here's the twist. Despite the beautiful array of data, the correlations are generally
+                            weak. This subtly hints that the Bechdel test ratings have a minimal direct impact on a
+                            movie’s financial success at the box office and
+                            its acceptance by the general public.
+                            <br><br>
+                            This means that producers and film directors allow themselves to not adhere to the Bechdel
+                            test as it does not influence them in any way, which explains the difference in proportion
+                            between actresses and actors.
+                            In conclusion, while the Bechdel test can be a useful initial indicator of female presence in films, it is not a comprehensive measure of a film's portrayal of women. 
                         </p>
 
                         <!-- <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
@@ -432,6 +473,7 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
             height: 200px;
             object-fit: cover;
             border-radius: 50%;
+            border: 3px solid #fff;
         }
 
         .team-member p {
