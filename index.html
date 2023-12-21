@@ -23,23 +23,7 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
 </head>
 
 <body>
-    <div id="loading">
-        <h1 id="pageTitle">Applied Data Analysis</h1>
-        <h2>Final Milestone Website</h2>
-
-        <br><br>
-        <br><br>
-        <br><br>
-        <br><br>
-        <h2>Discover our project !</h2>
-        <br><br>
-        <br><br>
-
-        <div id="arrow" class="fas fa-spin fa-arrow-down"></div>
-
-
-    </div>
-    <div id="content" style="display: none;">
+    <div id="content">
         <!-- Hero section -->
         <section id="about" class="text-white tm-font-big tm-parallax">
             <div class="text-center tm-hero-text-container">
@@ -767,32 +751,6 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
         });
 
     </script>
-
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-    const arrow = document.getElementById('arrow');
-    const loadingDiv = document.getElementById('loading');
-    const contentDiv = document.getElementById('content');
-
-    arrow.addEventListener('click', () => {
-        // Anime la page de chargement pour monter
-        loadingDiv.style.transform = 'translateY(-100%)';
-
-        // Révèle le contenu avec un fondu après un délai
-        setTimeout(() => {
-            loadingDiv.style.display = 'none';
-            contentDiv.style.display = 'block';
-            contentDiv.style.top = '0';
-            setTimeout(() => {
-                contentDiv.style.opacity = 1; // Rend le contenu opaque
-            }, 100); // Délai pour commencer l'animation de l'opacité
-        }, 350); // Délai pour commencer à déplacer le contenu
-    });
-});
-
-
-
-        </script>
 </body>
 
 </html>
