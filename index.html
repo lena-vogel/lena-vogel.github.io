@@ -160,18 +160,25 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
                             producer, 1.76·10<sup>-23</sup> for a female director and 2.66·10<sup>-15</sup> for both female director and producer.
                             We conclude that there is a correlation between the proportion of actresses in a movie and
                             the gender of the director and/or the producer. <br />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section id="actresses" class="tm-section-pad-top">
-            <div class="container">
-                <div class="row tm-content-box">
-                    <div class="col-lg-12 col-xl-12">
-                        <div class="tm-intro-text-container">
-                            <h2 class="tm-text-primary mb-4 tm-section-title">Quality of the increase</h2>
+                            But wait, there's another twist in the tale. What about the distribution of actors and actresses 
+                            depending on the movie genres? Here we plotted the first 15 most popular genres, and the proportion of
+                            actors and actresses in each of them. <br />
+                        </p><br />
+
+                        <h3>Movie Genres</h3>
+                        <iframe src="plots/bd_genre_ds.html" width="100%" height="600"
+                            style="border:none;"></iframe>
+
+                            As you can see, the distribution of male and female actors varies significantly across
+                            movie
+                            genres. Female
+                            actors are more frequently seen in LGBT, Drama, and Romance films, whereas they are less
+                            prevalent in Action or Crime movies.
+                            But now, let's dive into the most interesting part of this study: the analysis of the quality
+                            of the representation of women in movies.<br /><br /><br />
+
+                            <h2 class="tm-text-primary mb-4 tm-section-title">Quality of women representation</h2>
                             Now is time to evaluate the quality of this encouraging involvement of women in the film
                             industry!<br /><br />
                             <h3>Actors age</h3>
@@ -186,7 +193,7 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
                                 style="border:none;"></iframe>
                             Well well well... It seems pretty clear that there is no evolution among the years, but that
                             the
-                            difference between genders stays tremendously stable!<br /><br />
+                            difference between genders stays tremendously stable!<br /><br /><br />
 
                             <h3>Actors roles</h3>
                             We want to plot the main roles of the characters in wordclouds: one for the men and one for
@@ -220,12 +227,9 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
                             Here, the data are more chaotic, so there is not much to say, appart from the fact that
                             there is
                             again a predominance of family members in women, while men have job positions.
-                            We can also notice that <br /><br />
-                            <br>
-                            <br>
-                            <br>
+                            We can also notice that <br /><br /><br />
 
-                            <h2 class="tm-text-primary mb-4 tm-section-title">Bechdel Test</h2>
+                            <h3>Bechdel Test</h3>
                             <div class="container-bd" style="display: flex; align-items: flex-start;">
                                 <div class="text" style=" width: 50%; margin-right: 20px;">
                                     <p>Have you ever heard of the Bechdel Test? It's a set of criteria that a film must
@@ -344,24 +348,6 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
                                 the
                                 box-office revenue, the popularity and the vote average.<br /><br />
 
-                                But wait, there's another twist in the tale. Could it be that men and women don't often
-                                share the same cinematic playground, creating a division in movie genres, where some
-                                genres
-                                naturally attract more fame and followers?
-                            </p><br />
-
-                            <h3>Movie Genres</h3>
-                            <iframe src="plots/bd_genre_ds.html" width="100%" height="600"
-                                style="border:none;"></iframe>
-
-                            <p>
-                                As you can see, the distribution of male and female actors varies significantly across
-                                movie
-                                genres. Female
-                                actors are more frequently seen in LGBT, Drama, and Romance films, whereas they are less
-                                prevalent in Action or Crime movies. How could we make this irrelevant... ?
-                            </p>
-                            <br>
                             <h3> A friend to the rescue: Matching</h3>
 
                             <br>
@@ -425,7 +411,6 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
                                 <img src="img/correlation.png" width="100%" height="100%" style="border:none;"></img>
                             </div><br />
 
-                            <p>
                                 The heatmap on the right is showcasing the \(p\)-values linked with correlation
                                 coefficients from the left heatmap. All these values are between \(0.00\) and \(0.05\).
                                 This
@@ -455,12 +440,23 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
                                 proportion
                                 between actresses and actors.
                                 In conclusion, while the Bechdel test can be a useful initial indicator of female
-                                presence in films, it is not a comprehensive measure of a film's portrayal of women.
-                            </p>
-
+                                presence in films, it is not a comprehensive measure of a film's portrayal of women.<br /><br /><br />
+                            
                             <!-- <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
                             <img src="plots/h_bechdel.png" style="max-width: 60%; max-height: 100%; border: none;">
                         </div> -->
+
+                            <h2 class="tm-text-primary mb-4 tm-section-title">Conclusion</h2>
+                            Through the analysis we conducted, we saw that between 1980 and 2010, the proportion of
+                            actresses, directors and producers stayed stable. We also saw that the proportion of actresses
+                            in a movie was correlated with the gender of the director and the producer.
+                            Thanks to the Bechdel test, we also saw that the proportion of actresses in a movie was correlated
+                            with the score of the movie at the Bechdel test. However, we also saw that the Bechdel test
+                            score was not correlated with the popularity of the movie, nor with the box-office revenue.<br />
+                            Moreover, the deep analysis of the roles assigned to the characters allowed us to see that 
+                            women generally are designated as familiy members while men often have jobs.
+                            We hope that this analysis gave a first glimpse of the gendered dynamics at play in the film
+                            industry, and that it will encourage you to watch movies with a more critical eye.
                         </div>
                     </div>
                 </div>
