@@ -79,7 +79,7 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
                             thousands of
                             movies released between in the 20th and 21st centuries. To start, let us show you a first insight on the
                             cleaned dataset
-                            we are working with, look at the graph below which tracks the evolution of the 9'146 movie releases
+                            we are working with, look at the graph below which tracks the evolution of the 9,146 movie releases
                             through the years.</br>
 
                             <iframe src="plots/movie_distribution.html" width="100%" height="600"
@@ -325,14 +325,15 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
                             <h3>Bechdel Test</h3>
                             <div class="container-bd" style="display: flex; align-items: flex-start;">
                                 <div class="text" style=" width: 50%; margin-right: 20px;">
-                                    <p>Have you ever heard of the Bechdel Test? It's a set of criteria that a film must
+                                    Have you ever heard of the Bechdel Test? It's a set of criteria that a film must
                                         meet
                                         to be
-                                        considered minimally adequate in representing women. Popularized by Alison
+                                        considered minimally adequate in representing women.<br />
+                                        Popularized by Alison
                                         Bechdel
                                         back in 1985 (the original
                                         illustration is shown on the right),
-                                        the test is incredibly simple:</p>
+                                        the test is incredibly simple: <br /><br />
 
                                     <ol>
                                         <li>There must be at least two named women in the film;</li>
@@ -340,12 +341,12 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
                                         <li>About something other than a man.</li>
                                     </ol>
 
-                                    <p>Sounds easy, right? In an ideal world, every film would effortlessly pass this
+                                    Sounds easy, right? In an ideal world, every film would effortlessly pass this
                                         test.
                                         Yet, the
-                                        reality is a bit more complex...</p>
+                                        reality is a bit more complex...<br /><br />
 
-                                    <p>We've managed to gather Bechdel Score data for 2,658 films, thanks to the API
+                                    We've managed to gather Bechdel Score data for 2,658 films, thanks to the API
                                         from
                                         the <a href="https://bechdeltest.com/">Bechdel Test website</a>. It is important
                                         to
@@ -355,7 +356,7 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
                                         scale to 0 to 3.
                                         The lingering question remains: Has the Bechdel Test influenced the
                                         audience's
-                                        perception and the representation of women in the film industry?</p>
+                                        perception and the representation of women in the film industry?
 
                                 </div>
                                 <div class="image" style="width: 50%;">
@@ -376,21 +377,19 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
 
                             However, we need to be careful with those data, because not all movies from the CMU Dataset
                             have
-                            been evaluated by the Bechdel test. We should also consider that there is a bias on the set
-                            of
-                            movies that were entered by hand in this Bechdel dataset.<br />
-                            <iframe src="plots/number_of_movies_bechdel.html" width="100%" height="600"
-                                style="border:none;"></iframe>
+                            been evaluated by the Bechdel test (only between 20 and 140 per year between 1980 and 2010). 
+                            We should also consider that there is a bias on the set
+                            of movies that were entered by hand in this Bechdel dataset. So let's start this analysis, 
+                            by look at the evolution 
+                            of the proportion of movies that passed the test:<br />
+                            <!--<iframe src="plots/number_of_movies_bechdel.html" width="100%" height="600"
+                                style="border:none;"></iframe>--> 
 
                             <iframe src="plots/bd_rating_evolution.html" width="100%" height="600"
                                 style="border:none;"></iframe>
-
-                            As one can see, only between 16 and 140 movies were evaluated per year, which is a very
-                            small
-                            number compared to the total number of movies released per year (between 1980 and 2010).
-                            Let's
-                            start this analysis, by looking at the evolution of the Bechdel rating through the
-                            years.<br />
+                            
+                            There is quite an increase in the mean proportion of movies that pass the Bechdel test!
+                            (slope is 0.005)<br />
 
                             Now, do you think that movies with higher Bechdel rating involve more women ? <br />
 
@@ -400,7 +399,7 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
                             <p>
                                 It is obvious that a higher Bechdel rating typically indicates a greater representation
                                 of
-                                women (>20% increase for movies which completely pass the Bechdel test compared to the
+                                women (around 24% difference for movies which completely pass the Bechdel test compared to the
                                 ones
                                 that do not), this is a result we could reasonabily have expected, considering the
                                 test's
@@ -408,7 +407,9 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
                                 to have
                                 a higher Bechdel rating. But does this better rating influences the impact on the
                                 audience?
-                                Here, we'll take 2 metrics: the popularity of the movie, and the rating of the movie.
+                                Here, we'll take 2 metrics: the popularity of the movie, which is a score determined 
+                                here by <a href="https://developer.themoviedb.org/docs/popularity-and-trending">TMDB</a>, 
+                                and the rating of the movie.
                             </p>
 
 
@@ -489,9 +490,10 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
                             of
                             \(\beta_1\)
                             is <b>not</b>
-                            statistically significant. The Bechdel rating, therefore, does not impact a movie's
+                            statistically significant. Therefore, we can not state that the Bechdel rating,
+                            does not impact a movie's
                             popularity,
-                            and as a result, producers are not concerned with it. <br>
+                            and as a result, producers should not have any reason to be concerned with it. <br>
                             </p>
 
                             <p>
