@@ -121,8 +121,9 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
                 <div class="row tm-content-box">
                     <div class="col-lg-12 col-xl-12">
                         <div class="tm-intro-text-container">
-                            <h2 class="tm-text-primary mb-4 tm-section-title">Potential causes</h2>
-                            Now, let us explore the potential causes for the increase of women actresses in movies.
+                            <h2 class="tm-text-primary mb-4 tm-section-title">Potential correlations with 
+                                women proportion playing in movies</h2>
+                            Now, let us explore the potential causes for the proportion of women actresses in movies.
                             Here, we
                             will only take the data on the movies we have access to.
                             We will not be correlating the growing number of actresses to historical events
@@ -196,38 +197,118 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
                             difference between genders stays tremendously stable!<br /><br /><br />
 
                             <h3>Actors roles</h3>
-                            We want to plot the main roles of the characters in wordclouds: one for the men and one for
-                            the
-                            women characters.<br />
-                            Please note that most of the characters collected in the dataset are only mentioned by name,
-                            and
-                            not by
-                            role. Thus, we will only plot the roles of the characters that have a role. In a wordcloud,
-                            the
-                            most
-                            mentionned roles are represented by a bigger size.<br />
+                            Then, we will look at the roles of the actors.<br />
+                            Actors are credited in movies as several categories.<br />
+                            Some roles have names in the scenario, some only have job duties. 
+                            <div class="image" style="width: 90%;">
+                                <img style="max-width: 100%; height: auto; display:block"
+                                    src="plots/role_cat.png" alt="Role categories">
+                            </div>
+                            (Pictogram credit: <a href="https://thenounproject.com/browse/collection-icon/characters-49091/?p=1">Dando</a>)
                             <br />
 
-                            <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
-                                <img src="plots/wordcloud_job_roles.png" width="70%" height="100%"
-                                    style="border:none;"></img>
-                            </div><br />
-
-                            Looking at these wordclouds, it seems quite clear that women mostly are designated as family
-                            members,
-                            while men mainly are designated by their job position.
-                            And now, we want to plot the roles related to other roles (for
-                            instance: in "Mother's girlfriend", we will represent "Girlfriend")<br />
+                            We translate theses categories to four level of importance, with more important characters having names 
+                            and less charachter only being in a relationship with a named character or worse, with an unnamed character.
                             <br />
+                            How does gender impact these different categories ?
+                            <iframe src="plots/bar_plt_role_cat.html" width="100%" height="600"
+                                style="border:none;"></iframe>
+                            
+                            Let's have a look at the roles credited as a job! We do see that overwelming majority of roles are played by
+                            actors for the two first categories. We however observe that it's not the case for roles that are of less importance,
+                            we see a higher number of actress. Let's look at what all of these roles are!
+                            The first question is: What most common jobs do actors play ?<br />
+                            
+                            <iframe src="plots/job_roles_bar.html" width="100%" height="600"
+                                style="border:none;"></iframe>
 
-                            <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
-                                <img src="plots/wordcloud_r2j_roles.png" width="70%" height="100%"
-                                    style="border:none;"></img>
-                            </div><br />
-                            Here, the data are more chaotic, so there is not much to say, appart from the fact that
-                            there is
-                            again a predominance of family members in women, while men have job positions.
-                            We can also notice that <br /><br /><br />
+
+                                We find some roles which describe their position in the family. 
+                                Theses roles were not classified by our NLP as supporting role to a named 
+                                character as they may simply be label as "The grandmother" and not "Ted's grandmother".
+
+                                We observe that for the roles that are not describing their position in the family, 
+                                actress have roles such as nurse, waitress, receptionist... while men seem to have 
+                                higher status roles such as doctors, cops/sheriff, owner, reporter, priest...
+
+                                Let's take another look at the gender distribution in those roles. Are jobs with a
+                                perceived higher social status played by actors ?
+
+                                We can compare the gender of the roles of doctors with nurses in the last decades.
+                            
+                                So doctors are overwhelmingly played by men while nurse are mostly 
+                                played by women. How does it compare to reality ?
+                                Let's compare it to the 2008 U.S. Bureau of Labor Statistics. 
+                                In the statistics, 68% of doctors are men, compared to 82% of unnamed doctors 
+                                character's in movies. While for nurse, 90% of registered nurses are women, 
+                                in movies it's 72%. <br />
+                                (Source: 
+                                <a href="https://doi.org/10.1001/virtualmentor.2010.12.1.msoc1-1001_">Gender Diversity and Nurse-Physician Relationships.</a>
+                                (2010). In AMA Journal of Ethics (Vol. 12, Issue 1, pp. 41–45). American Medical Association (AMA).)<br /><br />
+                                So, while not a perfectly identical to the gender gap in our society, we find a heavy bias in 
+                                how the roles are casted. Let's check if this is evolving through time: <br />
+                            <iframe src="plots/role_job_barplot_history_doctor.html" width="100%" height="600"
+                                style="border:none;"></iframe>
+                            
+                            <iframe src="plots/role_job_barplot_history_nurse.html" width="100%" height="600"
+                                style="border:none;"></iframe>
+
+                                While we do see that movies in 2010s seem to completely differ from the other year, 
+                                this first look at the data seems to indicate less bias in recent years. Let's check another professions:<br />
+                                For the role driver, the actors are 0.81 men, 0.03 women and 0.16 unknown. Number of roles 68.<br />
+                                For the role judge, the actors are 0.78 men, 0.11 women and 0.11 unknown. Number of roles 37.<br />
+                                For the role reporter, the actors are 0.52 men, 0.28 women and 0.21 unknown. Number of roles 29.<br />
+                                For the role prosecutor, the actors are 0.71 men, 0.14 women and 0.14 unknown. Number of roles 7.<br />
+                                For the role teacher, the actors are 0.44 men, 0.36 women and 0.2 unknown. Number of roles 25.<br />
+                                For the role professor, the actors are 0.78 men, 0.11 women and 0.11 unknown. Number of roles 9.<br />
+                                For the role cop, the actors are 0.81 men, 0.03 women and 0.16 unknown. Number of roles 31.<br />
+                                For the role receptionist, the actors are 0.22 men, 0.5 women and 0.28 unknown. Number of roles 18.<br />
+                                For the role owner, the actors are 0.7 men, 0.13 women and 0.17 unknown. Number of roles 23.<br />
+                                For the role waiter-waitress, the actors are 0.57 men, 0.43 women. Number of roles 54. <br /><br />
+                                For a few of the jobs listed in the most common roles, we find that most of them are heavily gendered.
+                                <br />
+                                For example: looking at the gender distribution of teachers and professors. 
+                                One title: professor is linked to higher education and seems to be a role heavily played by men, 
+                                while the other: teacher is played by both actor and actresses.                                
+
+                                For a few of the jobs listed in the most common roles, we find that most of them are heavily gendered.
+                                <br />
+                                As we have a small number of roles played for each job, we will attempt to have a look at the bigger picture.
+                                Let's agregate some data using a useful metric.<br />
+                                If women play roles of jobs with a lower social status, what does their fictional average salary would look like?
+                                We used the data from the May 2022 National Occupational Employment and 
+                                Wage Estimates to estimate the average salary of the jobs played by actors and actresses.
+                                <br />
+                                (Source: U.S. BUREAU OF LABOR STATISTICS. 2008. 
+                                <a href="https://www.bls.gov/oes/current/oes_nat.htm">“May 2018 National Occupational Employment and Wage Estimates.”</a>
+                                 Bls.gov.)<br />  
+
+                            <iframe src="plots/box_plot_role_avg_pay.html" width="100%" height="600"
+                                style="border:none;"></iframe>
+                                We observe an almost identical median ! 
+                                But we do observe some differences, as we can see that low-wages jobs are 
+                                mostly acted by women while actors are casted to high paying jobs.
+                                We also very find a glass ceiling as the maximum salary for jobs 
+                                played by actress corresponds to the upper quartile of the men's job.
+                                <br />
+                                We will now take a peak at the 10 most played supporting role, 
+                                credited in a relationship to a named character.<br />
+
+                            <iframe src="plots/r2n_roles_bar.html" width="100%" height="600"
+                            style="border:none;"></iframe>
+
+                            We see similar roles, unsurprisingly, most of them are family members with 
+                            a named character but for the roles that are not, we notice again that 
+                            they include lawyer and doctor for actor's role and secretary for the women's role...
+                            
+                            We will not look at the supporting roles credited as in a relationship with a person 
+                            characterized by their job, as they represent too few examples.
+
+                            So, what did we find ? In summary, the contrast in the roles given to actors and actresses reflect common gender stereotypes in storytelling and media, where men are often associated with higher social status jobs, power, authority and action, while women are often portrayed in relation to helpful and emotional roles, when they are not their personal assistant.
+                            <br />
+                            This is a useful piece of the puzzle on how stereotypes are conveyed in movies productions. 
+
+                            <br /><br /><br />
 
                             <h3>Bechdel Test</h3>
                             <div class="container-bd" style="display: flex; align-items: flex-start;">
