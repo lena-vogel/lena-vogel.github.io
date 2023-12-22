@@ -41,7 +41,8 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
                 <div class="row tm-content-box">
                     <div class="col-lg-12 col-xl-12">
                         <div class="tm-intro-text-container">
-                            <h2 class="tm-text-primary mb-4 tm-section-title">Part I : What influence the presence of actress ? 
+                            <h2 class="tm-text-primary mb-4 tm-section-title">Part I : What influence the presence of
+                                actress ?
                             </h2>
                             Through the feminist struggles and the recent advances in gender equality, women have gained
                             space and
@@ -57,7 +58,8 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
                             excellence, the winds of change are palpable. This year, a striking 7 out of 21 films
                             competing
                             for the top
-                            prize are helmed by women (1/3). Cast your mind back to 1995, and the contrast is stark: a mere 2
+                            prize are helmed by women (1/3). Cast your mind back to 1995, and the contrast is stark: a
+                            mere 2
                             out
                             of 24 (1/12). This
                             shift is more than just numbers; it's a testament to the slow but sure march towards gender
@@ -66,7 +68,9 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
                             <br> <br>
                             Moreover, it is easy to see that movies, TV shows and other forms of art talk more and more
                             about women
-                            realities, letting the <a href="https://www.themoviedb.org/movie/817127-brainwashed-sex-camera-power">archaic male-gaze</a> in the past. However, like any great story, this
+                            realities, letting the <a
+                                href="https://www.themoviedb.org/movie/817127-brainwashed-sex-camera-power">archaic
+                                male-gaze</a> in the past. However, like any great story, this
                             one
                             too has its
                             conflicts. Stereotypes and inequalities stubbornly persist in the industry, reminding us
@@ -77,9 +81,11 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
                             gendered dynamics
                             at play in the film industry. Our guide? The CMU Movie Corpus dataset, a dataset of
                             thousands of
-                            movies released between in the 20th and 21st centuries. To start, let us show you a first insight on the
+                            movies released between in the 20th and 21st centuries. To start, let us show you a first
+                            insight on the
                             cleaned dataset
-                            we are working with, look at the graph below which tracks the evolution of the 9,146 movie releases
+                            we are working with, look at the graph below which tracks the evolution of the 9,146 movie
+                            releases
                             through the years.</br>
 
                             <iframe src="plots/movie_distribution.html" width="100%" height="600"
@@ -90,21 +96,27 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
                             between
                             1980 and 2010 only.</br>
 
-                            <br>Transitioning from our temporal exploration of movie releases to the geographical dimension, 
-                            we uncover another layer of the film industry's story. Let's pivot our focus to the global map, 
-                            where the geographical origins of these movies paint a vivid picture of industry trends and cultural 
+                            <br>Transitioning from our temporal exploration of movie releases to the geographical
+                            dimension,
+                            we uncover another layer of the film industry's story. Let's pivot our focus to the global
+                            map,
+                            where the geographical origins of these movies paint a vivid picture of industry trends and
+                            cultural
                             dominance.</br>
-                            
+
                             <iframe src="plots/map_countries_number_of_distinct_movies.html" width="100%" height="600"
                                 style="border:none;"></iframe>
 
-                            <br>The map we showed highlights a clear bias: a vast majority of the movies between 1980-2010 originate 
-                            from the United States and Europe. This concentration indicates a Western-centric dominance in the 
-                            film industry, both in terms of quantity and cultural influence. 
-                            This geographical bias in our dataset, evident in the distribution of movie production, is a crucial factor 
-                            to bear in mind as we proceed with our future analyses, ensuring a nuanced understanding 
+                            <br>The map we showed highlights a clear bias: a vast majority of the movies between
+                            1980-2010 originate
+                            from the United States and Europe. This concentration indicates a Western-centric dominance
+                            in the
+                            film industry, both in terms of quantity and cultural influence.
+                            This geographical bias in our dataset, evident in the distribution of movie production, is a
+                            crucial factor
+                            to bear in mind as we proceed with our future analyses, ensuring a nuanced understanding
                             of the film industry's landscape.</br>
-                            
+
                             <br>First, we could ask ourselves the following question: "Are there more women actresses
                             who
                             play
@@ -119,47 +131,71 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
                             whether when
                             women are <b>more</b> represented, it also imply they are <b>better</b> represented or
                             not.</br><br /><br />
-                            
-                            <h2 class="tm-text-primary mb-4 tm-section-title">Part II : Representation matters but is it enough ?</h2>
-                            <br>In our journey to understand the role of women in the film industry, we first delve into the proportion 
-                            of female actresses in movies. This exploration is only based on the data we have, without of correlating 
+
+                            <h2 class="tm-text-primary mb-4 tm-section-title">Part II : Representation matters but is it
+                                enough ?</h2>
+                            <br>In our journey to understand the role of women in the film industry, we first delve into
+                            the proportion
+                            of female actresses in movies. This exploration is only based on the data we have, without
+                            of correlating
                             changes in the industry with broader historical events.
-                            A natural question arises: how do the roles of movie directors and producers influence this proportion? 
+                            A natural question arises: how do the roles of movie directors and producers influence this
+                            proportion?
                             To answer this, let's look at the gender breakdown among these influential figures.
                             <br>
-                            <iframe src="plots/gender_distribution_bar.html" width="100%" height="600" style="border:none;"></iframe>
+                            <iframe src="plots/gender_distribution_bar.html" width="100%" height="600"
+                                style="border:none;"></iframe>
                             <br>
-                            Observing the surprisingly low proportion of female directors, even more so than producers, prompts us to examine how these figures have evolved over the years.
+                            Observing the surprisingly low proportion of female directors, even more so than producers,
+                            prompts us to examine how these figures have evolved over the years.
                             <br>
-                            <iframe src="plots/director_gender_proportion.html" width="100%" height="600" style="border:none;"></iframe>
+                            <iframe src="plots/director_gender_proportion.html" width="100%" height="600"
+                                style="border:none;"></iframe>
                             <br>
-                            Interestingly, the proportion of female directors has remained relatively constant, showing minimal change over time. But what about the producers?
+                            Interestingly, the proportion of female directors has remained relatively constant, showing
+                            minimal change over time. But what about the producers?
                             <br>
-                            <iframe src="plots/producer_gender_proportion.html" width="100%" height="600" style="border:none;"></iframe>
+                            <iframe src="plots/producer_gender_proportion.html" width="100%" height="600"
+                                style="border:none;"></iframe>
                             <br>
-                            Similarly, the trend for female producers mirrors that of directors — consistent but modest representation. This leads us to an intriguing aspect: is there a correlation between the presence of female directors and producers and the proportion of female actresses?
+                            Similarly, the trend for female producers mirrors that of directors — consistent but modest
+                            representation. This leads us to an intriguing aspect: is there a correlation between the
+                            presence of female directors and producers and the proportion of female actresses?
                             <br>
-                            <iframe src="plots/director_producer_actor_gender_correlation.html" width="100%" height="550" style="border:none;"></iframe>
+                            <iframe src="plots/director_producer_actor_gender_correlation.html" width="100%"
+                                height="550" style="border:none;"></iframe>
                             <br>
-                            Against the backdrop of these low proportions, we find a silver lining. There appears to be a <b>positive correlation between the proportion of actresses and the involvement of female directors or producers</b>. Notably, when both the director and producer are women, the proportion of actresses tends to be even higher. Statistical t-tests confirm this correlation, revealing significant p-values of 10<sup>-4</sup> for female producers, 1.76·10<sup>-23</sup> for female directors, and 2.66·10<sup>-15</sup> when both roles are occupied by women.
+                            Against the backdrop of these low proportions, we find a silver lining. There appears to be
+                            a <b>positive correlation between the proportion of actresses and the involvement of female
+                                directors or producers</b>. Notably, when both the director and producer are women, the
+                            proportion of actresses tends to be even higher. Statistical t-tests confirm this
+                            correlation, revealing significant \(p\)-values of \(10^{-4}\) for female producers,
+                            \(1.76\times10{-23}\) for female directors, and \(2.66\times10{-15}\) when both roles are
+                            occupied by women.
 
-                            But there's more to the story. How does this representation vary across different movie genres?
+                            But there's more to the story. How does this representation vary across different movie
+                            genres?
+                            <br>
                             <br>
 
                             <h3>Movie Genres and Gender Distribution</h3>
-                            <iframe src="plots/bd_genre_ds.html" width="100%" height="600" style="border:none;"></iframe>
+                            <iframe src="plots/bd_genre_ds.html" width="100%" height="600"
+                                style="border:none;"></iframe>
                             <br>
-                            The plot above reveals significant variations in gender distribution across movie genres. 
-                            Actresses are more prominent in genres like LGBT, Drama, and Romance, 
+                            The plot above reveals significant variations in gender distribution across movie genres.
+                            Actresses are more prominent in genres like LGBT, Drama, and Romance,
                             while they are less represented in Action or Crime movies.<br /><br />
 
-                            The insights gained from our analysis paint a multifaceted picture of women's 
-                            representation in movies. While female directors and producers are few, 
+                            The insights gained from our analysis paint a multifaceted picture of women's
+                            representation in movies. While female directors and producers are few,
                             their presence correlates with a higher proportion of female actors. This correlation
-                            is further nuanced by the genre of the movie, <b>indicating that the battle for 
-                                gender balance in the film industry is influenced by various factors</b>, including the type 
-                            of movies being made. As we continue to advocate for more balanced and diverse representation in 
-                            cinema, these findings underscore the importance of female leadership in shaping the narrative and presence of women on screen.
+                            is further nuanced by the genre of the movie, <b>indicating that the battle for
+                                gender balance in the film industry is influenced by various factors</b>, including the
+                            type
+                            of movies being made. As we continue to advocate for more balanced and diverse
+                            representation in
+                            cinema, these findings underscore the importance of female leadership in shaping the
+                            narrative and presence of women on screen.
                             <br /><br /><br />
 
                             <h2 class="tm-text-primary mb-4 tm-section-title">Quality of women representation</h2>
@@ -175,137 +211,161 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
 
                             <iframe src="plots/age_evolution_plot.html" width="100%" height="600"
                                 style="border:none;"></iframe>
-                                
-                            Well well well... The median age of male actors remains higher than that of female actors throughout the observed period, reflecting a persistent age gap.
-                            This trend could be indicative of industry preferences or casting practices that tend to favor different age profiles for male and female roles.
+
+                            Well well well... The median age of male actors remains higher than that of female actors
+                            throughout the observed period, reflecting a persistent age gap.
+                            This trend could be indicative of industry preferences or casting practices that tend to
+                            favor different age profiles for male and female roles.
                             While <b>actress are casted at the age of around 30 while the median for actors is 40</b>.
-                            This does set very different standards contributing to the stereotype that age has more negatives consequences 
+                            This does set very different standards contributing to the stereotype that age has more
+                            negatives consequences
                             for the evaluation of women compared to men.<br /><br /><br />
 
                             <h3>Actors roles</h3>
                             <figure style="width: 40%; float: right; margin-left: 20px;">
-                                <img style="width: 100%; height: auto; display: block;" src="img/Example_movie_end_credits.png" alt="Credit example">
-                                <figcaption style="text-align: center;"> <i><a href="https://commons.wikimedia.org/wiki/User:Zunter">Santeri Viinamäki</a>, <a href="https://commons.wikimedia.org/wiki/File:Example_movie_end_credits.png">Example movie end credits</a>, marked as public domain, more details on <a href="https://commons.wikimedia.org/wiki/Template:PD-text">Wikimedia Commons</a> </i> </figcaption>
+                                <img style="width: 100%; height: auto; display: block;"
+                                    src="img/Example_movie_end_credits.png" alt="Credit example">
+                                <figcaption style="text-align: center; margin-top: 10px;"> <i><a
+                                            href="https://commons.wikimedia.org/wiki/User:Zunter">Santeri Viinamäki</a>,
+                                        <a href="https://commons.wikimedia.org/wiki/File:Example_movie_end_credits.png">Example
+                                            movie end credits</a>, marked as public domain, more details on <a
+                                            href="https://commons.wikimedia.org/wiki/Template:PD-text">Wikimedia
+                                            Commons</a> </i> </figcaption>
                             </figure>
-                            
-                            
-                            
-                            As we analyse the distribution of actress in movies we should also take a deep dive into what they play. As this may be very well contribute to stereotypes on screen. <br />
-                            We scraped the role played by thousands of actors in movies and classified their role into several categories. This helps us understand what kind of character they play.<br />
+
+
+
+                            As we analyse the distribution of actress in movies we should also take a deep dive into
+                            what they play. As this may be very well contribute to stereotypes on screen. <br />
+                            We scraped the role played by thousands of actors in movies and classified their role into
+                            several categories. This helps us understand what kind of character they play.<br />
                             <br />
                             Actors are credited in movies as several categories.<br />
                             Some roles have names in the scenario, some only have job duties.<br />
 
                             <div class="image" style="width: 100%;">
-                                <img style="max-width: 100%; height: auto; display:block"
-                                    src="plots/role_cat.png" alt="Role categories">
-                                    <figcaption style="text-align: center;"><i>(Pictogram credit: <a href="https://thenounproject.com/browse/collection-icon/characters-49091/?p=1">Dando</a>)</i></figcaption>
+                                <img style="max-width: 100%; height: auto; display:block" src="plots/role_cat.png"
+                                    alt="Role categories">
+                                <figcaption style="text-align: center;"><i>(Pictogram credit: <a
+                                            href="https://thenounproject.com/browse/collection-icon/characters-49091/?p=1">Dando</a>)</i>
+                                </figcaption>
 
                             </div>
 
                             <br /><br />
 
-                            We translate theses categories to four level of importance, with more important characters having names 
-                            and less charachter only being in a relationship with a named character or worse, with an unnamed character.
+                            We translate theses categories to four level of importance, with more important characters
+                            having names
+                            and less charachter only being in a relationship with a named character or worse, with an
+                            unnamed character.
                             <br />
                             How does gender impact these different categories ?<br />
 
                             <iframe src="plots/bar_plt_role_cat.html" width="100%" height="600"
                                 style="border:none;"></iframe>
-                            
-                            Let's have a look at the roles credited as a job! We do see that <b>overwelming majority of roles are played by
-                            actors for the two first categories</b>. However, we observe that it's not the case for roles that are 
-                            <b>further away from the main characters have a higher number of actress</b>. 
+
+                            Let's have a look at the roles credited as a job! We do see that <b>overwelming majority of
+                                roles are played by
+                                actors for the two first categories</b>. However, we observe that it's not the case for
+                            roles that are
+                            <b>further away from the main characters have a higher number of actress</b>.
                             Let's look at what all of these roles are!
                             <br />
                             Our first question is: What's the most common jobs played by actors and actresses?<br />
-                            
+
                             <iframe src="plots/job_roles_bar.html" width="100%" height="600"
                                 style="border:none;"></iframe>
 
 
-                                We find some roles which describe their position in the family. 
-                                Theses roles were not classified by our NLP as supporting role to a named 
-                                character as they may simply be label as "The grandmother" and not "Ted's grandmother".
+                            We find some roles which describe their position in the family.
+                            Theses roles were not classified by our NLP as supporting role to a named
+                            character as they may simply be label as "The grandmother" and not "Ted's grandmother".
 
-                                We observe that for the roles that are not describing their position in the family, 
-                                actress have roles such as <b>nurse, waitress, receptionist...</b> while men seem to have 
-                                higher status roles such as <b>doctors, cops/sheriff, owner, reporter, priest...</b>
+                            We observe that for the roles that are not describing their position in the family,
+                            actress have roles such as <b>nurse, waitress, receptionist...</b> while men seem to have
+                            higher status roles such as <b>doctors, cops/sheriff, owner, reporter, priest...</b>
 
-                                Let's take a closer look at who plays nurses and doctors.
+                            Let's take a closer look at who plays nurses and doctors.
 
-                                <iframe src="plots/job_comparison_nurse_doctor.html" width="100%" height="600"
+                            <iframe src="plots/job_comparison_nurse_doctor.html" width="100%" height="600"
                                 style="border:none;"></iframe>
 
-                                So doctors are overwhelmingly played by men while nurses are mostly 
-                                played by women. How does it compare to reality ?
-                                Let's compare it to the 2008 U.S. Bureau of Labor Statistics. 
-                                In the statistics, <b>68% of doctors are men</b>, compared to <b>82% of unnamed doctors 
-                                character's in movies</b>. While for nurse, <b>90% of registered nurses are women</b>, 
-                                in movies it's <b>72%</b>. <br />
-                                (Source: 
-                                <a href="https://doi.org/10.1001/virtualmentor.2010.12.1.msoc1-1001_">Gender Diversity and Nurse-Physician Relationships.</a>
-                                (2010). In AMA Journal of Ethics (Vol. 12, Issue 1, pp. 41–45). American Medical Association (AMA).)<br /><br />
-                                
-                                So, while not a perfectly identical to the gender gap in our society, we find a <b>heavy bias in 
-                                    how the roles are casted</b>. Let's check if this is evolving through time: <br />
+                            So doctors are overwhelmingly played by men while nurses are mostly
+                            played by women. How does it compare to reality ?
+                            Let's compare it to the 2008 U.S. Bureau of Labor Statistics.
+                            In the statistics, <b>68% of doctors are men</b>, compared to <b>82% of unnamed doctors
+                                character's in movies</b>. While for nurse, <b>90% of registered nurses are women</b>,
+                            in movies it's <b>72%</b>. <br />
+
+                            <br />
+
+                            So, while not a perfectly identical to the gender gap in our society, we find a <b>heavy
+                                bias in
+                                how the roles are casted</b>. Let's check if this is evolving through time: <br />
                             <iframe src="plots/role_job_barplot_history_doctor.html" width="100%" height="600"
                                 style="border:none;"></iframe>
-                            
+
                             <iframe src="plots/role_job_barplot_history_nurse.html" width="100%" height="600"
                                 style="border:none;"></iframe>
 
-                                While we do see that movies in 2010s seem to completely differ from the other decades, 
-                                this first look at the data seems to indicate less bias in recent years. 
-                                Let's check how other professions are doing. 
-                                Especially who plays jobs with a perceived higher social status ?<br />
-                                
+                            While we do see that movies in 2010s seem to completely differ from the other decades,
+                            this first look at the data seems to indicate less bias in recent years.
+                            Let's check how other professions are doing.
+                            Especially who plays jobs with a perceived higher social status ?<br />
+
                             <iframe src="plots/job_comparison_several.html" width="100%" height="600"
                                 style="border:none;"></iframe>
-                                <br />
-                                For instance: looking at the gender distribution of teachers and professors. 
-                                One job title: <b>professor is linked to higher education and seems to be a role heavily played by men</b>, 
-                                while the other: <b>teacher is played by both actor and actresses</b>.                                
+                            <br />
+                            For instance: looking at the gender distribution of teachers and professors.
+                            One job title: <b>professor is linked to higher education and seems to be a role heavily
+                                played by men</b>,
+                            while the other: <b>teacher is played by both actor and actresses</b>.
 
-                                For a few of the jobs listed in the most common roles, we find that most of them are heavily gendered.
-                                <br />
-                                As we have a small number of roles played for each job, we will attempt to have a look at the bigger picture.
-                                Let's agregate some data using a useful metric.<br />
-                                If women play roles of jobs with a lower social status, what does their <b>fictional average salary</b> would look like?
-                                We used the data from the May 2022 National Occupational Employment and 
-                                Wage Estimates to estimate the average salary of the jobs played by actors and actresses.
-                                <br />
-                                (Source: U.S. BUREAU OF LABOR STATISTICS. 2008. 
-                                <a href="https://www.bls.gov/oes/current/oes_nat.htm">“May 2018 National Occupational Employment and Wage Estimates.”</a>
-                                 Bls.gov.)<br />  
+                            For a few of the jobs listed in the most common roles, we find that most of them are heavily
+                            gendered.
+                            <br> <br>
+                            As we have a small number of roles played for each job, we will attempt to have a look at
+                            the bigger picture.
+                            Let's agregate some data using a useful metric.<br />
+                            If women play roles of jobs with a lower social status, what does their <b>fictional average
+                                salary</b> would look like?
+                            We used the data from the May 2022 National Occupational Employment and
+                            Wage Estimates to estimate the average salary of the jobs played by actors and actresses.
+                            <br />
+                            <br />
 
                             <iframe src="plots/box_plot_role_avg_pay.html" width="100%" height="600"
                                 style="border:none;"></iframe>
-                                First thing we observe in the above distributions is an almost <b>identical median for both genders</b>! 
-                                But we do observe some differences, as we can see that <b>low-wages jobs are 
+                            First thing we observe in the above distributions is an almost <b>identical median for both
+                                genders</b>!
+                            But we do observe some differences, as we can see that <b>low-wages jobs are
                                 mostly acted by women while actors are casted to high paying jobs</b>.
-                                We also find what we could call a glass ceiling as the maximum salary for jobs 
-                                played by actress corresponds to the upper quartile of the men's job.
-                                <br />
-                                We will now take a peak at the 10 most played supporting role, 
-                                credited in a relationship to a named character.<br />
+                            We also find what we could call a glass ceiling as the maximum salary for jobs
+                            played by actress corresponds to the upper quartile of the men's job.
+                            <br />
+                            We will now take a peak at the 10 most played supporting role,
+                            credited in a relationship to a named character.<br />
 
                             <iframe src="plots/r2n_roles_bar.html" width="100%" height="600"
-                            style="border:none;"></iframe>
+                                style="border:none;"></iframe>
 
-                            We see similar roles, unsurprisingly, most of them are family members to a named character but for the roles that are not, we notice again that 
+                            We see similar roles, unsurprisingly, most of them are family members to a named character
+                            but for the roles that are not, we notice again that
                             they include lawyer and doctor for actor's role and secretary for the women's role... <br />
                             So again, it's the same story here ! <br /> <br />
 
-                            We will not look at the supporting roles credited as in a relationship with a person 
+                            We will not look at the supporting roles credited as in a relationship with a person
                             characterized by their job, as they represent too few examples.<br /> <br />
 
-                            So, what did we find ?  <br />
-                            In summary, the contrast in the roles given to actors and actresses reflect common gender stereotypes in storytelling and media, 
-                            where <b>men are often associated with higher social status jobs, power, authority and action,</b> 
-                            while <b>women are often portrayed as a relationship or play highly gendered jobs</b> in their roles. 
+                            So, what did we find ? <br />
+                            In summary, the contrast in the roles given to actors and actresses reflect common gender
+                            stereotypes in storytelling and media,
+                            where <b>men are often associated with higher social status jobs, power, authority and
+                                action,</b>
+                            while <b>women are often portrayed as a relationship or play highly gendered jobs</b> in
+                            their roles.
                             <br />
-                            This is a useful piece of the puzzle on how stereotypes are conveyed in movies productions. 
+                            This is a useful piece of the puzzle on how stereotypes are conveyed in movies productions.
 
                             <br /><br /><br />
 
@@ -313,14 +373,14 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
                             <div class="container-bd" style="display: flex; align-items: flex-start;">
                                 <div class="text" style=" width: 50%; margin-right: 20px;">
                                     Have you ever heard of the Bechdel Test? It's a set of criteria that a film must
-                                        meet
-                                        to be
-                                        considered minimally adequate in representing women.<br />
-                                        Popularized by Alison
-                                        Bechdel
-                                        back in 1985 (the original
-                                        illustration is shown on the right),
-                                        the test is incredibly simple: <br /><br />
+                                    meet
+                                    to be
+                                    considered minimally adequate in representing women.<br />
+                                    Popularized by Alison
+                                    Bechdel
+                                    back in 1985 (the original
+                                    illustration is shown on the right),
+                                    the test is incredibly simple: <br /><br />
 
                                     <ol>
                                         <li>There must be at least two named women in the film;</li>
@@ -329,27 +389,28 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
                                     </ol>
 
                                     Sounds easy, right? In an ideal world, every film would effortlessly pass this
-                                        test.
-                                        Yet, the
-                                        reality is a bit more complex...<br /><br />
+                                    test.
+                                    Yet, the
+                                    reality is a bit more complex...<br /><br />
 
                                     We've managed to gather Bechdel Score data for 2,658 films, thanks to the API
-                                        from
-                                        the <a href="https://bechdeltest.com/">Bechdel Test website</a>. It is important
-                                        to
-                                        note
-                                        that anyone can enter data on whether a film passes the Bechdel Test or not, on
-                                        a
-                                        scale to 0 to 3.
-                                        The lingering question remains: Has the Bechdel Test influenced the
-                                        audience's
-                                        perception and the representation of women in the film industry?
+                                    from
+                                    the <a href="https://bechdeltest.com/">Bechdel Test website</a>. It is important
+                                    to
+                                    note
+                                    that anyone can enter data on whether a film passes the Bechdel Test or not, on
+                                    a
+                                    scale to 0 to 3.
+                                    The lingering question remains: Has the Bechdel Test influenced the
+                                    audience's
+                                    perception and the representation of women in the film industry?
 
                                 </div>
                                 <div class="image" style="width: 50%;">
                                     <img style="max-width: 100%; height: auto; display:block"
                                         src="plots/bechdeltestcartoon.jpeg" alt="Bechdel Test Cartoon">
-                                        <figcaption style="text-align: center;"> Bechdel, Alison. <i>To Watch Out For.</i> 1985 </figcaption>
+                                    <figcaption style="text-align: center;"> Bechdel, Alison. <i>To Watch Out For.</i>
+                                        1985 </figcaption>
                                 </div>
                             </div>
                             <p style="margin-top: 7px;">
@@ -363,69 +424,80 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
                                 Let's
                                 delve into this intriguing topic together.</p>
 
-                            But first, an important consideration: we need to be cautious with those data, because not all movies from the CMU Dataset
+                            But first, an important consideration: we need to be cautious with those data, because not
+                            all movies from the CMU Dataset
                             have
-                            been evaluated by the Bechdel test (only between 20 and 140 per year between 1980 and 2010). 
+                            been evaluated by the Bechdel test (only between 20 and 140 per year between 1980 and 2010).
                             We should also consider that there is a bias on the set
-                            of movies that were entered by hand in this Bechdel dataset and also add that, while the Bechdel test can be a useful initial indicator of female
-                            presence in films, it is not a comprehensive measure of a film's portrayal of women.<br /><br />
-                            So let's start this analysis, 
-                            by looking at the evolution 
+                            of movies that were entered by hand in this Bechdel dataset and also add that, while the
+                            Bechdel test can be a useful initial indicator of female
+                            presence in films, it is not a comprehensive measure of a film's portrayal of
+                            women.<br /><br />
+                            So let's start this analysis,
+                            by looking at the evolution
                             of the proportion of movies that passed the test:<br />
                             <!--<iframe src="plots/number_of_movies_bechdel.html" width="100%" height="600"
-                                style="border:none;"></iframe>--> 
+                                style="border:none;"></iframe>-->
 
                             <iframe src="plots/bd_rating_evolution.html" width="100%" height="600"
                                 style="border:none;"></iframe>
-                            
+
                             There is quite an increase in the mean proportion of movies that pass the Bechdel test!
                             (slope is 0.005)<br />
-                            Even though the proportion of movies that pass the test is still low, it is encouraging to see it increase over time.<br />
+                            Even though the proportion of movies that pass the test is still low, it is encouraging to
+                            see it increase over time.<br />
 
                             Now, do you think that movies with higher Bechdel rating involve more women ? <br />
 
                             <iframe src="plots/actors_bdrating_proportion.html" width="100%" height="600"
                                 style="border:none;"></iframe>
 
-                                Here, it is obvious that a higher Bechdel rating typically indicates a greater percentage of
-                                actresses (around 24% difference for movies which completely pass the Bechdel test compared to the
-                                ones
-                                that do not), this is a result we could reasonabily have expected, considering the
-                                test's inherent design. But still, let's not take any shortcut! It is not because women are 
-                                present that they have interesting roles nor their own plot.
-                                So movies with higher number of actress tends
-                                to have
-                                a higher Bechdel rating. 
-                                
-                                <br>
-                                <h2 class="tm-text-primary mb-4 tm-section-title">Part III: From the Seats: Audience Perspectives.</h2>
-                                <br>
-                                But then, let’s answer the question: <b>is it clickbait?</b> Does it contribute to the popularity of the movie? Or even to the revenue? <br /><br />
+                            Here, it is obvious that a higher Bechdel rating typically indicates a greater percentage of
+                            actresses (around 24% difference for movies which completely pass the Bechdel test compared
+                            to the
+                            ones
+                            that do not), this is a result we could reasonabily have expected, considering the
+                            test's inherent design. But still, let's not take any shortcut! It is not because women are
+                            present that they have interesting roles nor their own plot.
+                            So movies with higher number of actress tends
+                            to have
+                            a higher Bechdel rating.
 
-                                Firstly, we'll take 2 metrics: the popularity of the movie, which is a score determined 
-                                here by <a href="https://developer.themoviedb.org/docs/popularity-and-trending">TMDB</a>, 
-                                and the rating of the movie.
-                                <br />
+                            <br>
+                            <br>
+                            <br>
+
+                            <h2 class="tm-text-primary mb-4 tm-section-title">Part III: From the Seats: Audience
+                                Perspectives.</h2>
+
+                            But then, let’s answer the question: <b>is it clickbait?</b> Does it contribute to the
+                            popularity of the movie? Or even to the revenue? <br /><br />
+
+                            Firstly, we'll take 2 metrics: the popularity of the movie, which is a score determined
+                            here by <a href="https://developer.themoviedb.org/docs/popularity-and-trending">TMDB</a>,
+                            and the rating of the movie.
+                            <br />
 
                             <iframe src="plots/popularity.html" width="100%" height="600" style="border:none;"></iframe>
-                                There's an intriguing pattern in these glitzy displays: movies that only score 1 at the
-                                Bechdel test are often the most popular ones. Why is
-                                this so? The answers aren't straightforward. This could be multiple confounder into this
-                                complex
-                                tapestry. It could be that the film
-                                industry, with its influential might, chooses to shine a brighter spotlight on movies
-                                where
-                                male characters take the center stage, and where women only are... present.
-                                Or perhaps, the audience, like a river, naturally flows towards the stories
-                                echoing a significant male
-                                presence. So is it the chicken or the egg?
-                                Let's see if we can find any pattern between the percentage of actresses and the rating:
+                            There's an intriguing pattern in these glitzy displays: movies that only score 1 at the
+                            Bechdel test are often the most popular ones. Why is
+                            this so? The answers aren't straightforward. This could be multiple confounder into this
+                            complex
+                            tapestry. It could be that the film
+                            industry, with its influential might, chooses to shine a brighter spotlight on movies
+                            where
+                            male characters take the center stage, and where women only are... present.
+                            Or perhaps, the audience, like a river, naturally flows towards the stories
+                            echoing a significant male
+                            presence. So is it the chicken or the egg?
+                            Let's see if we can find any pattern between the percentage of actresses and the rating:
                             <br /><br />
 
                             <h3> A friend to the rescue: Matching</h3>
 
                             <br>
-                            Let's do something new ! Have you ever heard about Matching ? It's a relatively new concept in statistics,
+                            Let's do something new ! Have you ever heard about Matching ? It's a relatively new concept
+                            in statistics,
                             popularized by Donald Rubin in the 1980s. You can think of Matching as your trusty sidekick
                             in reducing bias when estimating treatment effects in observational studies. Here's the
                             challenge: for every treated unit in your study, you need to find one or more non-treated
@@ -486,44 +558,86 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
                                 <img src="img/correlation.png" width="100%" height="100%" style="border:none;"></img>
                             </div><br />
 
-                                The heatmap on the right is showcasing the \(p\)-values linked with correlation
-                                coefficients from the left heatmap. All these values are between \(0.00\) and \(0.05\).
-                                This
-                                tiny
-                                detail is crucial. The patterns you see on the left
-                                heatmap aren't mere coincidences. They're statistically significant!
-                                <br><br>
-                                Let's focus back on the left heatmap. Here, the coefficients are quantified on a scale
-                                from
-                                -1 to 1. Imagine this scale as a spectrum. At one end, -1 signals a perfectly inverse
-                                correlation, like two dancers moving in opposite directions. At the other end, 1
-                                suggests a
-                                perfectly direct correlation, akin to synchronized swimmers moving in harmony. And in
-                                the
-                                middle, 0 stands for no correlation, like independent artists painting in their own
-                                styles.
-                                <br><br>
-                                Now, here's the twist. Despite the beautiful array of data, <b>the correlations are 
-                                generally weak.</b> This subtly hints that the Bechdel test ratings have a minimal direct impact on a
-                                movie’s financial success at the box office and its acceptance by the general public.
-                                <br><br>
-                                This means that producers and film directors allow themselves to not adhere to the
-                                Bechdel test as it does not influence them in any way, which would give no monitary benefits to make movies that pass the Bechdel test or even reducde difference in
-                                proportion between actresses and actors. 
-                                <br /><br /><br />
-                            
+                            The heatmap on the right is showcasing the \(p\)-values linked with correlation
+                            coefficients from the left heatmap. All these values are between \(0.00\) and \(0.05\).
+                            This
+                            tiny
+                            detail is crucial. The patterns you see on the left
+                            heatmap aren't mere coincidences. They're statistically significant!
+                            <br><br>
+                            Let's focus back on the left heatmap. Here, the coefficients are quantified on a scale
+                            from
+                            -1 to 1. Imagine this scale as a spectrum. At one end, -1 signals a perfectly inverse
+                            correlation, like two dancers moving in opposite directions. At the other end, 1
+                            suggests a
+                            perfectly direct correlation, akin to synchronized swimmers moving in harmony. And in
+                            the
+                            middle, 0 stands for no correlation, like independent artists painting in their own
+                            styles.
+                            <br><br>
+                            Now, here's the twist. Despite the beautiful array of data, <b>the correlations are
+                                generally weak.</b> This subtly hints that the Bechdel test ratings have a minimal
+                            direct impact on a
+                            movie’s financial success at the box office and its acceptance by the general public.
+                            <br><br>
+                            This means that producers and film directors allow themselves to not adhere to the
+                            Bechdel test as it does not influence them in any way, which would give no monitary benefits
+                            to make movies that pass the Bechdel test or even reducde difference in
+                            proportion between actresses and actors.
+                            <br /><br /><br />
+
                             <!-- <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
                             <img src="plots/h_bechdel.png" style="max-width: 60%; max-height: 100%; border: none;">
                         </div> -->
 
+                            <h2 class="tm-text-primary mb-4 tm-section-title"> One step back: how about ethics ?</h2>
+
+                            <p>
+                                During all this analysis, we used an open source dataset, but always leaving aside ethical and moral responsibilities. 
+                                Now, we need
+                                to navigate the complex ethical terrain of the digital world with four guiding "ethical
+                                lenses": beneficence, non-maleficence, privacy, and fairness.
+                                <br><br>
+                                As we saw, our insights could
+                                potentially reshape how producers and directors approach actor recruitment. 
+
+                                But this needs to be done carefully. The lens of non-maleficence warns of hidden pitfalls. Consider the
+                                Bechdel test – while its impact might seem limited, overlooking it could embolden sexist
+                                behaviors in the industry. It's a delicate balance, ensuring innovation doesn't
+                                inadvertently harm.
+                                <br><br>
+
+                                Now, turn to privacy. We're handling sensitive data, laden with personal details of
+                                actors. How do we protect their identities? The solution could lie in sophisticated
+                                techniques like \(k\)-anonymity or \(\epsilon\)-differential privacy, ensuring insights without invasion.
+                                <br><br>
+
+                                Finally, the lens of fairness invites you to ponder deeper. Our data analysis holds
+                                power – the power to influence perceptions and decisions. It's crucial to wield this
+                                power judiciously, ensuring our conclusions don't perpetuate discrimination, especially
+                                against women in the industry.
+                            </p>
+
+                            <br>
+
                             <h2 class="tm-text-primary mb-4 tm-section-title">Conclusion</h2>
                             So what did we learn?<br /><br />
-                            First and foremost, it’s not tomorrow that we will find gender equality in the acting world. <b>We are far from a 50/50 ratio, and it may take decades.</b><br /><br />
-                            We did observe that the proportion of actors/actresses in a movie was correlated with the gender of the director and the producer. <b>This may be a good lead in order to fast track gender equality in the industry.</b> <br /><br />
-                            The deep analysis of the roles assigned to the characters allowed us to see that <b>men and women generally play stereotypical roles</b>. This does tell us that more actress is not enough! <b>We need better roles in order not to reproduce patriarchal stereotypes.</b><br /><br />
-                            We also saw that the Bechdel test give us something to look forward to, as <b>movies seem to be passing increasingly!</b><br /><br />
-                            Finally, we check how the audience felt about movies that passed or failed the Bechdel test and <b> we did not find that more “feminist” movies are unpopular.</b><br /><br />
-                            We hope that this analysis gave a first glimpse of the gendered dynamics at play in the film industry, and that it will encourage you to watch movies with a more critical eye.<br /><br />
+                            First and foremost, it’s not tomorrow that we will find gender equality in the acting world.
+                            <b>We are far from a 50/50 ratio, and it may take decades.</b><br /><br />
+                            We did observe that the proportion of actors/actresses in a movie was correlated with the
+                            gender of the director and the producer. <b>This may be a good lead in order to fast track
+                                gender equality in the industry.</b> <br /><br />
+                            The deep analysis of the roles assigned to the characters allowed us to see that <b>men and
+                                women generally play stereotypical roles</b>. This does tell us that more actress is not
+                            enough! <b>We need better roles in order not to reproduce patriarchal
+                                stereotypes.</b><br /><br />
+                            We also saw that the Bechdel test give us something to look forward to, as <b>movies seem to
+                                be passing increasingly!</b><br /><br />
+                            Finally, we check how the audience felt about movies that passed or failed the Bechdel test
+                            and <b> we did not find that more “feminist” movies are unpopular.</b><br /><br />
+                            We hope that this analysis gave a first glimpse of the gendered dynamics at play in the film
+                            industry, and that it will encourage you to watch movies with a more critical
+                            eye.<br /><br />
 
                         </div>
                     </div>
@@ -534,7 +648,9 @@ https://www.tooplate.com/view/2117-infinite-loop // Infinite Loop - Bootstrap 4.
 
         <div class="contact">
             <div class="title">
-                <h2>The Team</h2>
+                <h1>Applied Data Analysis - EPFL </h1>
+                <br>
+                <h2>Made with ❤️ by the team</h2>
             </div>
             <footer class="team-footer">
                 <div class="team-member">
